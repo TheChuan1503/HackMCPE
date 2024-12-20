@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/mdui/1.0.2/css/mdui.min.css">
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <style>
+        * {
+            user-select: none;
+        }
+        *:not(.mdui-icon) {
+            font-family: system-ui;
+        }
+    </style>
+    <script>document.write("<title>HackMCPE - " + location.host)</script></title>
+</head>
+
+<body class="mdui-drawer-body-left mdui-theme-primary-brown mdui-theme-accent-light-green mdui-appbar-with-toolbar">
+    <div class="mdui-appbar mdui-appbar-fixed">
+        <div class="mdui-toolbar mdui-color-theme">
+            <div class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#drawer'}">
+                <i class="mdui-icon material-icons">menu</i>
+            </div>
+            <div class="mdui-typo-title">
+                HackMCPE
+            </div>
+        </div>
+    </div>
+    
+    <div class="mdui-container mdui-panel mdui-panel-gapless" mdui-panel id="cont">
+        
+    </div>
+    <script>
+        const vers = ["1.21.4","1.20.8"]
+        for (var i = 0; i < vers.length; i++){
+            $.get("./vers/" + vers[i] + ".html",function(r,s){
+                document.getElementById("cont").innerHTML += r
+                mdui.mutation()
+            })
+        }
+        </script>
+    
+    <div class="mdui-drawer mdui-drawer-left" id="drawer">
+        <div class="mdui-color-theme" style="width: 100%;height: 144px;">
+            <b style="position: absolute;top: 116px;left: 16px;">
+                Made with 1503Dev
+            </b>
+        </div>
+        <ul class="mdui-list" id="file_list">
+            <li class="mdui-list-item mdui-ripple" disable onclick="wd.finishAndRemoveTask()">
+                <i class="mdui-list-item-icon mdui-icon material-icons">exit_to_app</i>
+                <div class="mdui-list-item-content">退出</div>
+            </li>
+        </ul>
+    </div>
+
+    <script src="https://lib.baomitu.com/mdui/1.0.2/js/mdui.min.js"></script>
+    
+</body>
+
+</html>
