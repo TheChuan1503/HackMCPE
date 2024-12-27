@@ -33,14 +33,20 @@
     <div class="mdui-container mdui-panel mdui-panel-gapless" mdui-panel id="cont">
         
     </div>
+    <div id="spinner" class="mdui-spinner mdui-spinner-colorful mdui-center" style="margin-top: 16px"></div>
     <script>
+        var loadedCount = 0;
         const vers = ["1.21.5","1.21.4","1.21.2","1.20.8"]
         for (var i = 0; i < vers.length; i++){
             $.get("./vers/" + vers[i] + ".html",function(r,s){
                 document.getElementById("cont").innerHTML += r
                 mdui.mutation()
+                loadedCount++
+                if (loadedCount == vers.length) {
+                    document.getElementById("spinner").remove()
+                }
             })
-            for(var o = 0; o < 2000; o++){
+            for(var o = 0; o < 4000; o++){
                 
             }
         }
