@@ -36,7 +36,7 @@
     <div id="spinner" class="mdui-spinner mdui-spinner-colorful mdui-center" style="margin-top: 16px"></div>
     <script>
         var loadedCount = 0;
-        const vers = ["1.21.5","1.21.4","1.21.2","1.20.8"]
+        const vers = ["1.21.6","1.21.5","1.21.4","1.21.2","1.20.8"]
         for (var i = 0; i < vers.length; i++){
             $.get("vers/" + vers[i] + ".html",function(r,s){
                 document.getElementById("cont").innerHTML += r
