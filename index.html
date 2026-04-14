@@ -1,86 +1,271 @@
 <!DOCTYPE html>
-<html lang="zh-cn">
-
+<html class="mdui-theme-auto">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
-    <meta name="renderer" content="webkit">
-    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/mdui/1.0.2/css/mdui.min.css">
-    <script src="https://static.1503dev.top/ajax/jquery/3.7.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/mdui@2/mdui.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+    <script src="https://unpkg.com/mdui@2/mdui.global.js"></script>
+    <title>HackMCPE</title>
     <style>
         * {
-            user-select: none;
+            box-sizing: border-box;
         }
-        *:not(.mdui-icon) {
-            font-family: system-ui;
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            overflow: hidden;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+        mdui-top-app-bar {
+            flex-shrink: 0;
+        }
+        .main-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 16px;
+            overflow: hidden;
+        }
+        mdui-card {
+            width: 100%;
+            max-width: 800px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        .search-field {
+            width: 100%;
+            flex-shrink: 0;
+        }
+        .search-wrapper {
+            padding: 8px 16px;
+            flex-shrink: 0;
+        }
+        #data-list {
+            overflow-y: auto;
+            flex: 1;
+            min-height: 0;
+            padding: 0; /* 移除列表内边距 */
+        }
+        .pagination-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 12px;
+            gap: 12px;
+            flex-shrink: 0;
+        }
+        #page-info {
+            font-size: 14px;
+            color: rgb(var(--mdui-color-on-surface-variant));
+        }
+        footer {
+            text-align: center;
+            padding: 12px;
+            font-size: 12px;
+            color: rgb(var(--mdui-color-on-surface-variant));
+            flex-shrink: 0;
+        }
+        footer a {
+            color: rgb(var(--mdui-color-primary));
+            text-decoration: none;
+        }
+        .desc-text {
+            font-size: 12px;
+            color: rgb(var(--mdui-color-on-surface-variant));
+        }
+        .item-name {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            max-width: 100%;
+        }
+        .dialog-img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 16px;
+            display: block;
+        }
+        #dialog-info-text {
+            line-height: 1.6;
+            word-break: break-all;
         }
     </style>
-    <script>document.write("<title>HackMCPE - " + location.host)</script></title>
 </head>
+<body>
+    <mdui-top-app-bar>
+        <mdui-top-app-bar-title>HackMCPE</mdui-top-app-bar-title>
+    </mdui-top-app-bar>
 
-<body class="mdui-drawer-body-left mdui-theme-primary-brown mdui-theme-accent-green mdui-appbar-with-toolbar">
-    <div class="mdui-appbar mdui-appbar-fixed">
-        <div class="mdui-toolbar mdui-color-theme">
-            <div class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#drawer'}">
-                <i class="mdui-icon material-icons">menu</i>
+    <div class="main-container">
+        <mdui-card variant="elevated">
+            <mdui-linear-progress id="loading-bar" style="display: none;"></mdui-linear-progress>
+            <div class="search-wrapper">
+                <mdui-text-field class="search-field" placeholder="搜索..." icon="search--outlined" clearable></mdui-text-field>
             </div>
-            <div class="mdui-typo-title">
-                HackMCPE
+            <mdui-list id="data-list"></mdui-list>
+            <div class="pagination-container">
+                <mdui-button-icon id="prev-btn" icon="chevron_left--outlined"></mdui-button-icon>
+                <span id="page-info"></span>
+                <mdui-button-icon id="next-btn" icon="chevron_right--outlined"></mdui-button-icon>
             </div>
+        </mdui-card>
+    </div>
+
+    <mdui-dialog id="detail-dialog" close-on-overlay-click>
+        <span slot="headline" id="dialog-title"></span>
+        <div id="dialog-content">
+            <img id="dialog-img" class="dialog-img" src="" alt="Preview" style="display: none;">
+            <div id="dialog-info-text"></div>
         </div>
-    </div>
-    
-    <div class="mdui-container mdui-panel mdui-panel-gapless" mdui-panel id="cont">
-        
-    </div>
-    <div id="spinner" class="mdui-spinner mdui-spinner-colorful mdui-center" style="margin-top: 16px"></div>
+        <mdui-button slot="action" variant="text" id="dialog-cancel-btn">取消</mdui-button>
+        <mdui-button slot="action" variant="tonal" id="dialog-download-btn">下载</mdui-button>
+    </mdui-dialog>
+
+    <footer>
+        Copyright 2023-2026 <a href="https://1503dev.top" target="_blank">1503Dev</a>
+    </footer>
+
     <script>
-        var loadedCount = 0;
-        const vers = [
-            '_general',
-            '1.21.94',
-            '1.21.7',
-            '1.21.6',
-            '1.21.5',
-            '1.21.4',
-            '1.21.2',
-            '1.20.8'
-        ]
-        for (var i = 0; i < vers.length; i++){
-            $.get("vers/" + vers[i] + ".html",function(r,s){
-                document.getElementById("cont").innerHTML += r
-                mdui.mutation()
-                loadedCount++
-                if (loadedCount == vers.length) {
-                    document.getElementById("spinner").remove()
-                    /*mdui.snackbar({
-                        message: '打开侧边栏以启用/禁用Github下载加速',
-                        //position: 'top'
-                    })*/
-                }
-            })
+        let totalData = [];
+        let filteredData = [];
+        const itemsPerPage = 10;
+        let currentPage = 1;
+
+        const listElement = document.getElementById('data-list');
+        const pageInfo = document.getElementById('page-info');
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+        const searchField = document.querySelector('.search-field');
+        const loadingBar = document.getElementById('loading-bar');
+
+        const dialog = document.getElementById('detail-dialog');
+        const dialogTitle = document.getElementById('dialog-title');
+        const dialogImg = document.getElementById('dialog-img');
+        const dialogInfoText = document.getElementById('dialog-info-text');
+        const dialogDownloadBtn = document.getElementById('dialog-download-btn');
+        const dialogCancelBtn = document.getElementById('dialog-cancel-btn');
+
+        async function loadData() {
+            loadingBar.style.display = 'block';
+            try {
+                const response = await fetch('./data.json');
+                totalData = await response.json();
+                filteredData = totalData;
+                renderList();
+            } catch (error) {
+                totalData = [];
+                filteredData = [];
+                renderList();
+            }
+            loadingBar.style.display = 'none';
         }
-        </script>
-    
-    <div class="mdui-drawer mdui-drawer-left" id="drawer">
-        <div class="mdui-color-theme" style="width: 100%;height: 144px;">
-            <b style="position: absolute;top: 116px;left: 16px;">
-                Made by 1503Dev
-            </b>
-        </div>
-        <ul class="mdui-list" id="file_list">
-            <li class="mdui-list-item mdui-ripple" disable onclick="wd.finishAndRemoveTask()">
-                <div class="mdui-list-item-content">启用Github下载加速</div>
-                <label class="mdui-switch">
-                    <input type="checkbox" id="ghproxy_enabled" disabled onclick="ghproxyEnabled(this)"/>
-                    <i class="mdui-switch-icon"></i>
-                </label>
-            </li>
-        </ul>
-    </div>
 
-    <script src="https://lib.baomitu.com/mdui/1.0.2/js/mdui.min.js"></script>
-    
+        function renderList() {
+            const start = (currentPage - 1) * itemsPerPage;
+            const end = start + itemsPerPage;
+            const pageData = filteredData.slice(start, end);
+
+            listElement.innerHTML = '';
+            if (pageData.length === 0) {
+                listElement.innerHTML = '<mdui-list-item>暂无数据</mdui-list-item>';
+            } else {
+                pageData.forEach((item) => {
+                    const listItem = document.createElement('mdui-list-item');
+                    listItem.setAttribute('headline-line', '1');
+                    listItem.setAttribute('description-line', '1');
+                    listItem.setAttribute('clickable', '');
+                    listItem.style.padding = "0"; // 确保项目本身无额外padding
+                    listItem.innerHTML = `
+                        <span class="item-name">${item.name}</span>
+                        <span slot="description" class="desc-text">${item.desc}</span>
+                    `;
+                    listItem.addEventListener('click', () => showDetails(item));
+                    listElement.appendChild(listItem);
+                });
+            }
+
+            const totalPages = Math.max(1, Math.ceil(filteredData.length / itemsPerPage));
+            pageInfo.textContent = `第 ${currentPage} / ${totalPages} 页`;
+
+            prevBtn.disabled = currentPage === 1;
+            nextBtn.disabled = currentPage === totalPages || totalPages === 0;
+        }
+
+        function showDetails(item) {
+            dialogTitle.textContent = item.name;
+            
+            // 自动转换 \n 为 <br>
+            const infoContent = item.info || item.desc || "";
+            dialogInfoText.innerHTML = infoContent.replace(/\n/g, '<br>');
+            
+            dialogImg.style.display = 'none';
+            
+            const imgPathPng = `./img/${item.name}.png`;
+            const imgPathJpg = `./img/${item.name}.jpg`;
+
+            const img = new Image();
+            img.onload = () => {
+                dialogImg.src = img.src;
+                dialogImg.style.display = 'block';
+            };
+            img.onerror = () => {
+                if (img.src.endsWith('.png')) {
+                    img.src = imgPathJpg;
+                } else {
+                    dialogImg.style.display = 'none';
+                }
+            };
+            img.src = imgPathPng;
+
+            dialogDownloadBtn.onclick = () => {
+                window.open(item.href, '_blank');
+            };
+            
+            dialogCancelBtn.onclick = () => dialog.open = false;
+
+            dialog.open = true;
+        }
+
+        prevBtn.addEventListener('click', () => {
+            if (currentPage > 1) {
+                currentPage--;
+                renderList();
+            }
+        });
+
+        nextBtn.addEventListener('click', () => {
+            const totalPages = Math.ceil(filteredData.length / itemsPerPage);
+            if (currentPage < totalPages) {
+                currentPage++;
+                renderList();
+            }
+        });
+
+        searchField.addEventListener('input', (e) => {
+            const keyword = e.target.value.toLowerCase().trim();
+            if (keyword === '') {
+                filteredData = totalData;
+            } else {
+                filteredData = totalData.filter(item => {
+                    const nameMatch = (item.name || "").toLowerCase().includes(keyword);
+                    const descMatch = (item.desc || "").toLowerCase().includes(keyword);
+                    const infoMatch = (item.info || "").toLowerCase().includes(keyword);
+                    return nameMatch || descMatch || infoMatch;
+                });
+            }
+            currentPage = 1;
+            renderList();
+        });
+
+        loadData();
+    </script>
 </body>
-
 </html>
