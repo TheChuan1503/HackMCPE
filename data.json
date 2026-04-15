@@ -4,5 +4,48 @@
         "desc": "10.37MB MCv1.7-v1.26",
         "href": "./apk/Arlen_v1.0.3_FULLY-FREE.apk",
         "info": "功能特性：\n• 全模块访问权限\n• 战斗辅助 (杀戮光环 Killaura、自瞄 AimAssist 等)\n• 运动控制 (飞行 Fly、加速 Speed、无跌落伤害 NoFall)\n• 视觉渲染 (透视 ESP、界面 HUD、各种特效)\n• 杂项工具 (Misc 功能与实用工具)\n• 可自定义 GUI 菜单\n• 性能优化与稳定运行"
+    },
+    {
+        "name": "Apollon Client v4.62 Ghost",
+        "desc": "826MB MCv1.21.111 32-bit",
+        "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/1.21.111/Apollon_Client_1.21.111_v4.62_32Bit_Ghost.apk",
+        "info": "The Apollon Client | Minecraft 模组菜单客户端 v4.62（32 位 / 1.21.111）\n\n 更新内容：\n\n· 更新了 Xray 功能。\n· 改进了 Anti Bot。\n· 移除了 XP 赠送功能（因游戏开发者修复了相关机制，后续会尝试用其他方式实现）。\n· 移除了 Movement 类别中的部分功能（使用率较低）。"
+    },
+    {
+        "name": "Apollon v4.3 Ghost",
+        "desc": "572MB MCv1.21.94 64-bit",
+        "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/1.21.94/Apollon_v4.3_1.21.94_Ghost_arm64-v8a.apk",
+        "info": "The Apollon Client | Minecraft 1.21.94（64 位）\n模组菜单客户端 v4.2 \n 更新 \n\n 更新内容：\n\n· 客户端技术性更新，现在所有菜单尺寸统一。\n· 性能优化。\n· 修复了 32 位版本的崩溃问题。\n· 反击退功能改为按钮形式（因 32 位客户端会崩溃）。\n· 修复 Xray。\n· 全新菜单设计。\n· 重写 Kill Aura。\n· 添加 Hurt Check，仅在可命中时攻击实体。\n· 添加 Anti Knockback。\n· 添加 Force Creative Fly，绕过禁用飞行的反作弊。\n· 添加配置的加载/卸载功能。\n· 各种修复与添加（具体记不清了）。\n\n经典内容：\n 原创音乐\n 菜单背景\n 原创皮肤包（含漏洞/exploit 皮肤）"
+    },
+    {
+        "name": "Apollon v3.61",
+        "desc": "315MB MCv1.21.50.07 32-bit",
+        "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/1.21.5/Apollon_v3.61_1.21.50.07_armeabi-v7a.apk"
+    },
+    {
+        "name": "BlazeLauncher 1.1-Beta",
+        "desc": "37.3MB MCv1.21.51.02 64-bit",
+        "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/1.21.5/BlazeLauncher_1.1-Beta_1.21.51.02_arm64-v8a.apk"
+    },
+    {
+        "name": "Diagoldze D BEST PRAY Edited",
+        "desc": "232MB MCv1.21.50.07 32-bit",
+        "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/1.21.5/Diagoldze_D-BEST-PRAY-Edited_1.21.50.07_armeabi-v7a.apk"
+    },
+    {
+        "name": "Apollon",
+        "desc": "321MB MCv1.21.44.01",
+        "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/1.21.4/Apollon_1.21.44.01.apk"
+    },
+    {
+        "name": "Diagoldze DialogRemoved",
+        "desc": "227MB MCv1.21.44.01",
+        "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/1.21.4/Diagoldze_1.21.41.01_DialogRemoved.apk"
+    },
+    {
+        "name": "Apollon v2.32",
+        "desc": "354MB MCv1.21.2.02 32-bit",
+        "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/1.21.2/Apollon_v2.32_1.21.2.02_armeabi-v7a.apk",
+        "info": "适用于 1.21.2.02（32 位）的模组菜单（内置作弊的 Minecraft）\n\n已更新版本\n\n给那些使用 32 位手机的用户\n\n全部经过测试\n安全\n\n名称：Apollon_Client"
     }
 ]
