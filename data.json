@@ -1,5 +1,11 @@
 [
     {
+        "name": "Lumina Client v4.1.8.3 完整移除",
+        "desc": "19.37M MCv1.26",
+        "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc/Lumina.Client_v4.1.8.3_RemoveCompletely.apk",
+        "info": "首个适用于 Minecraft Bedrock Edition 1.26.0（32-64 位）的作弊客户端\n\n名称：LuminaClient 版本 4.1.8.3（修正版）\n\n绕过检测：100%\n\n更新日志：\n\n• 添加了对 Minecraft 1.26.0.2 的完全支持\n• 移除了签名验证和会话时长检查机制（无需观看广告）\n• 无残留代码\n• 禁用了 Firebase 应用分析服务"
+    },
+    {
         "name": "Arlen v1.0.3 FULLY FREE",
         "desc": "10.37MB MCv1.7-v1.26",
         "href": "./apk/Arlen_v1.0.3_FULLY-FREE.apk",
@@ -46,6 +52,16 @@
         "name": "Apollon v2.32",
         "desc": "354MB MCv1.21.2.02 32-bit",
         "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/1.21.2/Apollon_v2.32_1.21.2.02_armeabi-v7a.apk",
-        "info": "适用于 1.21.2.02（32 位）的模组菜单（内置作弊的 Minecraft）\n\n已更新版本\n\n给那些使用 32 位手机的用户\n\n全部经过测试\n安全\n\n名称：Apollon_Client"
+        "info": "适用于 1.21.2.02（32 位）的模组菜单（内置作弊的 Minecraft）\n\n已更新版本\n\n给那些使用 32 位手机的用户"
+    },
+    {
+        "name": "Toolbox Circlor",
+        "desc": "26.6MB 1.20.x",
+        "href": "https://drive.1503dev.top/s/bvtG"
+    },
+    {
+        "name": "Toolbox Hirobox",
+        "desc": "1.20.x",
+        "href": "https:///www.123pan.com/s/fqQojv-19uJH.html"
     }
 ]

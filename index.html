@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://unpkg.com/mdui@2/mdui.css">
+    <link rel="stylesheet" href="https://static.1503dev.top/ajax/mdui/2.1.3/mdui.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
-    <script src="https://unpkg.com/mdui@2/mdui.global.js"></script>
+    <script src="https://static.1503dev.top/ajax/mdui/2.1.3/mdui.global.js" defer=""></script>
     <title>HackMCPE</title>
     <style>
         * {
@@ -52,7 +52,7 @@
             overflow-y: auto;
             flex: 1;
             min-height: 0;
-            padding: 0; /* 移除列表内边距 */
+            padding: 0;
         }
         .pagination-container {
             display: flex;
@@ -97,6 +97,9 @@
             line-height: 1.6;
             word-break: break-all;
         }
+        .spacer {
+            flex: 1;
+        }
     </style>
 </head>
 <body>
@@ -125,14 +128,32 @@
             <img id="dialog-img" class="dialog-img" src="" alt="Preview" style="display: none;">
             <div id="dialog-info-text"></div>
         </div>
+        <mdui-button slot="action" variant="text" id="github-proxy-btn" style="display: none;margin-left:0">代理下载</mdui-button>
+        <div slot="action" class="spacer"></div>
         <mdui-button slot="action" variant="text" id="dialog-cancel-btn">取消</mdui-button>
         <mdui-button slot="action" variant="tonal" id="dialog-download-btn">下载</mdui-button>
     </mdui-dialog>
 
-    <footer>
-        Copyright 2023-2026 <a href="https://1503dev.top" target="_blank">1503Dev</a>
-    </footer>
+    <mdui-dialog id="proxy-dialog" close-on-overlay-click>
+        <span slot="headline" id="proxy-dialog-title"></span>
+        <div id="proxy-dialog-content">
+            Github 加速下载服务由 <a href="https://gh-proxy.org/" target="_blank">GH-Proxy</a> 提供
+        </div>
+        <mdui-button slot="action" variant="text" onclick="document.getElementById('proxy-dialog').open = false">取消</mdui-button>
+        <mdui-button slot="action" variant="tonal" id="proxy-confirm-btn">下载</mdui-button>
+    </mdui-dialog>
 
+    <footer>
+        Copyright 2023-2026 <a href="https://1503dev.top" target="_blank">1503Dev</a><br>
+        <span id="statistics"></span>
+    </footer>
+    
+    <script>
+        function statisticsCallback(data){
+            document.getElementById('statistics').textContent = data.total + " Views"
+        }
+    </script>
+    <script src="https://api1.1503dev.top/legacy_visits_statistics/?callback=statisticsCallback&tag=adec7ca51e12b0e0f17c9a30222ef9c8" defer></script>
     <script>
         let totalData = [];
         let filteredData = [];
@@ -152,6 +173,11 @@
         const dialogInfoText = document.getElementById('dialog-info-text');
         const dialogDownloadBtn = document.getElementById('dialog-download-btn');
         const dialogCancelBtn = document.getElementById('dialog-cancel-btn');
+        const githubProxyBtn = document.getElementById('github-proxy-btn');
+
+        const proxyDialog = document.getElementById('proxy-dialog');
+        const proxyDialogTitle = document.getElementById('proxy-dialog-title');
+        const proxyConfirmBtn = document.getElementById('proxy-confirm-btn');
 
         async function loadData() {
             loadingBar.style.display = 'block';
@@ -182,7 +208,7 @@
                     listItem.setAttribute('headline-line', '1');
                     listItem.setAttribute('description-line', '1');
                     listItem.setAttribute('clickable', '');
-                    listItem.style.padding = "0"; // 确保项目本身无额外padding
+                    listItem.style.padding = "0";
                     listItem.innerHTML = `
                         <span class="item-name">${item.name}</span>
                         <span slot="description" class="desc-text">${item.desc}</span>
@@ -201,16 +227,15 @@
 
         function showDetails(item) {
             dialogTitle.textContent = item.name;
-            
-            // 自动转换 \n 为 <br>
             const infoContent = item.info || item.desc || "";
             dialogInfoText.innerHTML = infoContent.replace(/\n/g, '<br>');
-            
             dialogImg.style.display = 'none';
             
+            const isGithubRelease = item.href.includes('github.com') && item.href.includes('/releases/');
+            githubProxyBtn.style.display = isGithubRelease ? 'inline-block' : 'none';
+
             const imgPathPng = `./img/${item.name}.png`;
             const imgPathJpg = `./img/${item.name}.jpg`;
-
             const img = new Image();
             img.onload = () => {
                 dialogImg.src = img.src;
@@ -225,11 +250,16 @@
             };
             img.src = imgPathPng;
 
-            dialogDownloadBtn.onclick = () => {
-                window.open(item.href, '_blank');
-            };
-            
+            dialogDownloadBtn.onclick = () => window.open(item.href, '_blank');
             dialogCancelBtn.onclick = () => dialog.open = false;
+
+            githubProxyBtn.onclick = () => {
+                proxyDialogTitle.textContent = item.name + "";
+                proxyConfirmBtn.onclick = () => {
+                    window.open('https://gh-proxy.org/' + item.href, '_blank');
+                };
+                proxyDialog.open = true;
+            };
 
             dialog.open = true;
         }
@@ -255,10 +285,9 @@
                 filteredData = totalData;
             } else {
                 filteredData = totalData.filter(item => {
-                    const nameMatch = (item.name || "").toLowerCase().includes(keyword);
-                    const descMatch = (item.desc || "").toLowerCase().includes(keyword);
-                    const infoMatch = (item.info || "").toLowerCase().includes(keyword);
-                    return nameMatch || descMatch || infoMatch;
+                    return (item.name || "").toLowerCase().includes(keyword) || 
+                           (item.desc || "").toLowerCase().includes(keyword) || 
+                           (item.info || "").toLowerCase().includes(keyword);
                 });
             }
             currentPage = 1;
