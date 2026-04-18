@@ -2,7 +2,7 @@
     {
         "name": "MCPE Apollon Client v5.41",
         "desc": "627 MB MCv1.26.13 64-bit",
-        "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc/Apollon_1.26.13_v5.41_64Bit.apk",
+        "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc/MCPE_Apollon_Client_1.26.13_v5.41_64Bit.apk",
         "info": "The Apollon Client | Minecraft 模组菜单客户端 v5.41 补丁：\n\n新内容：\n\n- 修复了 Scaffold（自动架桥）。由于 Auto Fish（自动钓鱼）的代码，该功能此前可能无法工作。\n\n- 添加了 Auto Fish（自动钓鱼）。\n激活该功能。手持钓鱼竿靠近水边并使用鱼竿。客户端将开始为你自动钓鱼。可以通过再次使用鱼竿或切换物品栏槽位来停止自动钓鱼。\n\n- 为 No Break Delay（无破坏延迟）添加了 Multiplier（倍率）设置。\n\n- 减小了作弊菜单图标的大小。"
     },
     {
@@ -72,7 +72,7 @@
         "name": "LuminaClient – RC 4.1.8.3",
         "desc": "19.9 MB MCv1.26.0.2",
         "href": "https://github.com/TheProjectLumina/LuminaClient/releases/download/RC-4.1.9.1/app-release.apk",
-        "info": "md### 更新日志：\n\n---\n\n* [+]\n新增对 Minecraft 1.26.0.2 的完整支持"
+        "info": "md### 更新日志：\n\n* [+]\n新增对 Minecraft 1.26.0.2 的完整支持"
     },
     {
         "name": "Arlen v1.0.3 FULLY FREE",
