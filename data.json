@@ -1,14 +1,32 @@
 [
     {
+        "name": "LuminaClient – RC 4.1.9.2",
+        "desc": "19MB MCv1.26.12.2",
+        "href": "https://github.com/TheProjectLumina/LuminaClient/releases/download/RC-4.1.9.2/app-release.apk",
+        "info": "md### 更新日志：\n\n* [+]\n新增对 Minecraft 1.26.12.2 的完整支持\n* [*]\n修复自身皮肤显示不正确的问题\n* [*]\n替换了应用内登录方式"
+    },
+    {
+        "name": "LuminaClient – RC 4.1.9.1",
+        "desc": "19MB MCv1.26.10.04",
+        "href": "https://github.com/TheProjectLumina/LuminaClient/releases/download/RC-4.1.9.1/app-release.apk",
+        "info": "md### 更新日志：\n\n* [+]\n新增对 Minecraft 1.26.10.04 的完整支持\n\n## 热修复更新：\n\n* [*]\n修复 KillAura、Hitbox 及其他战斗模块无法锁定玩家的问题\n* [*]\n修复访问 Aternos 服务器的问题\n* [*]\n修复访问 Hive、Zeqa 及其他需要现代证书链支持的服务器的问题\n* [*]\n替换了身份验证库，并重新设计了整个身份验证流程\n* [*]\n修复了获取 Microsoft 身份令牌时出现 HTTP 403 错误的问题\n* [*]\n修复了“您的发现环境与主机不匹配”的错误\n* [*]\n修复了“数据包处理（错误：XXXX）”的错误\n* [*]\n修复了其他登录问题，并进行了一般性优化"
+    },
+    {
         "name": "Lumina Client v4.1.8.3 完整移除",
-        "desc": "19.37M MCv1.26",
+        "desc": "19.37MB MCv1.26.0.2",
         "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc/Lumina.Client_v4.1.8.3_RemoveCompletely.apk",
         "info": "首个适用于 Minecraft Bedrock Edition 1.26.0（32-64 位）的作弊客户端\n\n名称：LuminaClient 版本 4.1.8.3（修正版）\n\n绕过检测：100%\n\n更新日志：\n\n• 添加了对 Minecraft 1.26.0.2 的完全支持\n• 移除了签名验证和会话时长检查机制（无需观看广告）\n• 无残留代码\n• 禁用了 Firebase 应用分析服务"
     },
     {
+        "name": "LuminaClient – RC 4.1.8.3",
+        "desc": "19.9MB MCv1.26.0.2",
+        "href": "https://github.com/TheProjectLumina/LuminaClient/releases/download/RC-4.1.9.1/app-release.apk",
+        "info": "md### 更新日志：\n\n---\n\n* [+]\n新增对 Minecraft 1.26.0.2 的完整支持"
+    },
+    {
         "name": "Arlen v1.0.3 FULLY FREE",
         "desc": "10.37MB MCv1.7-v1.26",
-        "href": "./apk/Arlen_v1.0.3_FULLY-FREE.apk",
+        "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc/Arlen_v1.0.3_FULLY-FREE.apk",
         "info": "功能特性：\n• 全模块访问权限\n• 战斗辅助 (杀戮光环 Killaura、自瞄 AimAssist 等)\n• 运动控制 (飞行 Fly、加速 Speed、无跌落伤害 NoFall)\n• 视觉渲染 (透视 ESP、界面 HUD、各种特效)\n• 杂项工具 (Misc 功能与实用工具)\n• 可自定义 GUI 菜单\n• 性能优化与稳定运行"
     },
     {
@@ -55,13 +73,18 @@
         "info": "适用于 1.21.2.02（32 位）的模组菜单（内置作弊的 Minecraft）\n\n已更新版本\n\n给那些使用 32 位手机的用户"
     },
     {
-        "name": "Toolbox Circlor",
-        "desc": "26.6MB 1.20.x",
+        "name": "(Toolbox) Circlor",
+        "desc": "26.6MB MCv1.20.x",
         "href": "https://drive.1503dev.top/s/bvtG"
     },
     {
-        "name": "Toolbox Hirobox",
-        "desc": "1.20.x",
+        "name": "(Toolbox) Aronabox AfterFinal ｜ 在终点之后",
+        "desc": "10.83MB MCv1.20.x",
+        "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc/Aronabox_AfterFinal.apk"
+    },
+    {
+        "name": "(Toolbox) Hirobox",
+        "desc": "MCv1.20.x",
         "href": "https:///www.123pan.com/s/fqQojv-19uJH.html"
     }
 ]

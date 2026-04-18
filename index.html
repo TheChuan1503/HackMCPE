@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://static.1503dev.top/ajax/mdui/2.1.3/mdui.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
-    <script src="https://static.1503dev.top/ajax/mdui/2.1.3/mdui.global.js" defer=""></script>
+    <script src="https://static.1503dev.top/ajax/mdui/2.1.3/mdui.global.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <title>HackMCPE</title>
     <style>
         * {
@@ -97,6 +98,15 @@
             line-height: 1.6;
             word-break: break-all;
         }
+        /* 确保渲染后的图片和表格不溢出 */
+        #dialog-info-text img {
+            max-width: 100%;
+            height: auto;
+        }
+        #dialog-info-text table {
+            width: 100%;
+            border-collapse: collapse;
+        }
         .spacer {
             flex: 1;
         }
@@ -126,7 +136,7 @@
         <span slot="headline" id="dialog-title"></span>
         <div id="dialog-content">
             <img id="dialog-img" class="dialog-img" src="" alt="Preview" style="display: none;">
-            <div id="dialog-info-text"></div>
+            <div id="dialog-info-text" class="mdui-typo"></div>
         </div>
         <mdui-button slot="action" variant="text" id="github-proxy-btn" style="display: none;margin-left:0">代理下载</mdui-button>
         <div slot="action" class="spacer"></div>
@@ -227,8 +237,21 @@
 
         function showDetails(item) {
             dialogTitle.textContent = item.name;
-            const infoContent = item.info || item.desc || "";
-            dialogInfoText.innerHTML = infoContent.replace(/\n/g, '<br>');
+            const infoRaw = item.info || item.desc || "";
+            
+            // 检查 marked 库是否加载
+            if (infoRaw.startsWith("md#")) {
+                const mdContent = infoRaw.substring(3);
+                try {
+                    // 使用全局 window.marked.parse 确保调用成功
+                    dialogInfoText.innerHTML = window.marked.parse(mdContent);
+                } catch (e) {
+                    dialogInfoText.textContent = mdContent;
+                }
+            } else {
+                dialogInfoText.innerHTML = infoRaw.replace(/\n/g, '<br>');
+            }
+            
             dialogImg.style.display = 'none';
             
             const isGithubRelease = item.href.includes('github.com') && item.href.includes('/releases/');
