@@ -1,59 +1,110 @@
 [
     {
+        "name": "MCPE Apollon Client v5.41",
+        "desc": "627 MB MCv1.26.13 64-bit",
+        "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc/Apollon_1.26.13_v5.41_64Bit.apk",
+        "info": "The Apollon Client | Minecraft 模组菜单客户端 v5.41 补丁：\n\n新内容：\n\n- 修复了 Scaffold（自动架桥）。由于 Auto Fish（自动钓鱼）的代码，该功能此前可能无法工作。\n\n- 添加了 Auto Fish（自动钓鱼）。\n激活该功能。手持钓鱼竿靠近水边并使用鱼竿。客户端将开始为你自动钓鱼。可以通过再次使用鱼竿或切换物品栏槽位来停止自动钓鱼。\n\n- 为 No Break Delay（无破坏延迟）添加了 Multiplier（倍率）设置。\n\n- 减小了作弊菜单图标的大小。"
+    },
+    {
+        "name": "MCPE Apollon Client v5.31",
+        "desc": "627 MB MCv1.26.13 64-bit",
+        "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc/Apollon_1.26.13_v5.31_64Bit.apk"
+    },
+    {
+        "name": "MCPE Apollon Client v5.2",
+        "desc": "627 MB MCv1.26.12 64-bit",
+        "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc/Apollon_1.26.12_v5.2_64Bit.apk"
+    },
+    {
         "name": "LuminaClient – RC 4.1.9.2",
-        "desc": "19MB MCv1.26.12.2",
+        "desc": "19 MB MCv1.26.12.2",
         "href": "https://github.com/TheProjectLumina/LuminaClient/releases/download/RC-4.1.9.2/app-release.apk",
         "info": "md### 更新日志：\n\n* [+]\n新增对 Minecraft 1.26.12.2 的完整支持\n* [*]\n修复自身皮肤显示不正确的问题\n* [*]\n替换了应用内登录方式"
     },
     {
+        "name": "MCPE Apollon Client v5.11",
+        "desc": "627 MB MCv1.26.10 64-bit",
+        "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc/Apollon_1.26.10_v5.11_64Bit.apk"
+    },
+    {
         "name": "LuminaClient – RC 4.1.9.1",
-        "desc": "19MB MCv1.26.10.04",
+        "desc": "19 MB MCv1.26.10.04",
         "href": "https://github.com/TheProjectLumina/LuminaClient/releases/download/RC-4.1.9.1/app-release.apk",
         "info": "md### 更新日志：\n\n* [+]\n新增对 Minecraft 1.26.10.04 的完整支持\n\n## 热修复更新：\n\n* [*]\n修复 KillAura、Hitbox 及其他战斗模块无法锁定玩家的问题\n* [*]\n修复访问 Aternos 服务器的问题\n* [*]\n修复访问 Hive、Zeqa 及其他需要现代证书链支持的服务器的问题\n* [*]\n替换了身份验证库，并重新设计了整个身份验证流程\n* [*]\n修复了获取 Microsoft 身份令牌时出现 HTTP 403 错误的问题\n* [*]\n修复了“您的发现环境与主机不匹配”的错误\n* [*]\n修复了“数据包处理（错误：XXXX）”的错误\n* [*]\n修复了其他登录问题，并进行了一般性优化"
     },
     {
+        "name": "Flare Client 1.26.3",
+        "desc": "330.69 MB MCv1.26.3 64-bit",
+        "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc/flare-26.3-v8a.apk",
+        "info": "Flare Client 1.26.3 (26.3) \n\nMinecraft 修改版的更新，而非独立客户端。\n\n包含内容：\n\n1. 支持以资源包形式使用着色器。\n2. 无需 Xbox 账号即可进入服务器（如 FrizMine、Phoenix），并配有全新界面。但对于 NeverTime 或 Antralia 等服务器，仍需 Xbox 账号。\n\n更新内容：\n\n本次更新未添加新功能，仅是将版本从 1.26.2 (26.2) 升级至 1.26.3 (26.3)。\n\n无需删除已安装的 Minecraft —— 它们独立运行。"
+    },
+    {
+        "name": "WClient v21.0",
+        "desc": "62.2 MB MCv1.26.3",
+        "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc/WClient.v21.0.apk",
+        "info": "Minecraft Bedrock Edition 1.26.3 (32-64 bit) 首款作弊端\n\n更新内容：\n\n•修复了 Infinite Aura 的崩溃和错误。\n•优化了中继器连接以获得更好的延迟。\n•优化了昵称显示。\n•添加了聊天后缀。\n•修复了 Arraylist（功能列表）。\n•减少了任务数量。\n•验证现在大约需要 25 秒。\n•修复了水晶相关错误。\n•改进了添加好友功能，现在您可以轻松添加好友。\n•为 PlayerTP 添加了玩家选择功能。\n•改进了 GUI 模块选择。\n•修复了 Anti-Crystal（反水晶）错误。\n•改进了 Killaura（杀戮光环）。\n•在 WAura 中添加了 Anti-Bot（反机器人）。\n•为 SkyWars 和 BedWars 优化了 bhop（连跳）。\n•改进了 MotionFly（运动飞行）。\n•添加了 Lifeboat 和 Cubecraft 模式。\n•绕过 Cubecraft 的高塔守护者检测。\n•改进了 ESP（透视）。\n•分离了 ESP、昵称、护甲 ESP 和追踪器。\n•改进了目标 HUD 界面。\n•改进了 Overlay（覆盖层）。\n•添加了对 1.26.3 版本的支持。"
+    },
+    {
+        "name": "Flare Client 1.26.2",
+        "desc": "331 MB MCv1.26.2 64-bit",
+        "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc/flare-26.2-v8a.apk",
+        "info": "Flare Client 1.26.2 (26.2)\n\n修改版 Minecraft 更新，而非独立客户端。\n\n包含内容：\n\n1. 支持资源包形式的光影。\n2. 无需 Xbox 账号即可通过新界面进入服务器（如 FrizMine、Phoenix）。但对于 NeverTime 或 Antralia 等服务器，仍需登录。\n\n更新内容：\n\n本次更新未添加新功能 —— 仅是从版本 1.26.1 (26.1) 升级至 1.26.2 (26.2)。\n\n无需卸载已安装的 Minecraft —— 它们可以独立运行。"
+    },
+    {
+        "name": "WClient v20.0",
+        "desc": "82.66 MB MCv1.26.1",
+        "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc/WClientv20.0.apk",
+        "info": "Minecraft 基岩版 1.26.1 (26.1) (32-64 位) 的首个作弊器\n \n更新内容：\n\n•改进了用户界面。\n•改进了图形界面。\n•改进了自动断开连接功能。\n•添加了库存辅助工具。\n•添加了对版本 1.26.1 的支持。"
+    },
+    {
         "name": "Lumina Client v4.1.8.3 完整移除",
-        "desc": "19.37MB MCv1.26.0.2",
+        "desc": "19.37 MB MCv1.26.0.2",
         "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc/Lumina.Client_v4.1.8.3_RemoveCompletely.apk",
         "info": "首个适用于 Minecraft Bedrock Edition 1.26.0（32-64 位）的作弊客户端\n\n名称：LuminaClient 版本 4.1.8.3（修正版）\n\n绕过检测：100%\n\n更新日志：\n\n• 添加了对 Minecraft 1.26.0.2 的完全支持\n• 移除了签名验证和会话时长检查机制（无需观看广告）\n• 无残留代码\n• 禁用了 Firebase 应用分析服务"
     },
     {
+        "name": "Lunar 2.1.50",
+        "desc": "92.6 MB MCv1.26.0 APKS",
+        "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc/Lunar.2.1.50.apks",
+        "info": "md#Lunar Client 更新至 Minecraft 基岩版 1.26.0 (26.0) \n\n更新内容：\n\n- 添加了对 v1.21.60 的支持\n- 添加了 自动挖矿！ 自动开采选定的矿石，自动进食，防止窒息。\n- 添加了 仓库查找！ 众多选项，查找木桶、潜影盒和其他方块！\n- 添加了 自动退出！ 当血量低时自动断开连接或运行命令\n- 添加了 掉落无伤！ 永远不会受到掉落伤害！\n- 改进了 透视功能！ 速度更快、更可靠。\n- 为命令添加了自动补全功能！\n- /nuke 改进"
+    },
+    {
         "name": "LuminaClient – RC 4.1.8.3",
-        "desc": "19.9MB MCv1.26.0.2",
+        "desc": "19.9 MB MCv1.26.0.2",
         "href": "https://github.com/TheProjectLumina/LuminaClient/releases/download/RC-4.1.9.1/app-release.apk",
         "info": "md### 更新日志：\n\n---\n\n* [+]\n新增对 Minecraft 1.26.0.2 的完整支持"
     },
     {
         "name": "Arlen v1.0.3 FULLY FREE",
-        "desc": "10.37MB MCv1.7-v1.26",
+        "desc": "10.37 MB MCv1.7-v1.26",
         "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc/Arlen_v1.0.3_FULLY-FREE.apk",
         "info": "功能特性：\n• 全模块访问权限\n• 战斗辅助 (杀戮光环 Killaura、自瞄 AimAssist 等)\n• 运动控制 (飞行 Fly、加速 Speed、无跌落伤害 NoFall)\n• 视觉渲染 (透视 ESP、界面 HUD、各种特效)\n• 杂项工具 (Misc 功能与实用工具)\n• 可自定义 GUI 菜单\n• 性能优化与稳定运行"
     },
     {
         "name": "Apollon Client v4.62 Ghost",
-        "desc": "826MB MCv1.21.111 32-bit",
+        "desc": "826 MB MCv1.21.111 32-bit",
         "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/1.21.111/Apollon_Client_1.21.111_v4.62_32Bit_Ghost.apk",
         "info": "The Apollon Client | Minecraft 模组菜单客户端 v4.62（32 位 / 1.21.111）\n\n 更新内容：\n\n· 更新了 Xray 功能。\n· 改进了 Anti Bot。\n· 移除了 XP 赠送功能（因游戏开发者修复了相关机制，后续会尝试用其他方式实现）。\n· 移除了 Movement 类别中的部分功能（使用率较低）。"
     },
     {
         "name": "Apollon v4.3 Ghost",
-        "desc": "572MB MCv1.21.94 64-bit",
+        "desc": "572 MB MCv1.21.94 64-bit",
         "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/1.21.94/Apollon_v4.3_1.21.94_Ghost_arm64-v8a.apk",
         "info": "The Apollon Client | Minecraft 1.21.94（64 位）\n模组菜单客户端 v4.2 \n 更新 \n\n 更新内容：\n\n· 客户端技术性更新，现在所有菜单尺寸统一。\n· 性能优化。\n· 修复了 32 位版本的崩溃问题。\n· 反击退功能改为按钮形式（因 32 位客户端会崩溃）。\n· 修复 Xray。\n· 全新菜单设计。\n· 重写 Kill Aura。\n· 添加 Hurt Check，仅在可命中时攻击实体。\n· 添加 Anti Knockback。\n· 添加 Force Creative Fly，绕过禁用飞行的反作弊。\n· 添加配置的加载/卸载功能。\n· 各种修复与添加（具体记不清了）。\n\n经典内容：\n 原创音乐\n 菜单背景\n 原创皮肤包（含漏洞/exploit 皮肤）"
     },
     {
         "name": "Apollon v3.61",
-        "desc": "315MB MCv1.21.50.07 32-bit",
+        "desc": "315 MB MCv1.21.50.07 32-bit",
         "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/1.21.5/Apollon_v3.61_1.21.50.07_armeabi-v7a.apk"
     },
     {
         "name": "BlazeLauncher 1.1-Beta",
-        "desc": "37.3MB MCv1.21.51.02 64-bit",
+        "desc": "37.3 MB MCv1.21.51.02 64-bit",
         "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/1.21.5/BlazeLauncher_1.1-Beta_1.21.51.02_arm64-v8a.apk"
     },
     {
         "name": "Diagoldze D BEST PRAY Edited",
-        "desc": "232MB MCv1.21.50.07 32-bit",
+        "desc": "232 MB MCv1.21.50.07 32-bit",
         "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/1.21.5/Diagoldze_D-BEST-PRAY-Edited_1.21.50.07_armeabi-v7a.apk"
     },
     {
@@ -68,13 +119,13 @@
     },
     {
         "name": "Apollon v2.32",
-        "desc": "354MB MCv1.21.2.02 32-bit",
+        "desc": "354 MB MCv1.21.2.02 32-bit",
         "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/1.21.2/Apollon_v2.32_1.21.2.02_armeabi-v7a.apk",
         "info": "适用于 1.21.2.02（32 位）的模组菜单（内置作弊的 Minecraft）\n\n已更新版本\n\n给那些使用 32 位手机的用户"
     },
     {
         "name": "(Toolbox) Circlor",
-        "desc": "26.6MB MCv1.20.x",
+        "desc": "26.6 MB MCv1.20.x",
         "href": "https://drive.1503dev.top/s/bvtG"
     },
     {

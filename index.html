@@ -147,7 +147,7 @@
     <mdui-dialog id="proxy-dialog" close-on-overlay-click>
         <span slot="headline" id="proxy-dialog-title"></span>
         <div id="proxy-dialog-content">
-            Github 加速下载服务由 <a href="https://gh-proxy.org/" target="_blank">GH-Proxy</a> 提供
+            Github 下载代理服务由 <a href="https://gh-proxy.org/" target="_blank">GH-Proxy</a> 提供
         </div>
         <mdui-button slot="action" variant="text" onclick="document.getElementById('proxy-dialog').open = false">取消</mdui-button>
         <mdui-button slot="action" variant="tonal" id="proxy-confirm-btn">下载</mdui-button>
@@ -155,6 +155,7 @@
 
     <footer>
         Copyright 2023-2026 <a href="https://1503dev.top" target="_blank">1503Dev</a><br>
+        <span>资源来源于网络</span><br>
         <span id="statistics"></span>
     </footer>
     
@@ -163,7 +164,7 @@
             document.getElementById('statistics').textContent = data.total + " Views"
         }
     </script>
-    <script src="https://api1.1503dev.top/legacy_visits_statistics/?callback=statisticsCallback&tag=adec7ca51e12b0e0f17c9a30222ef9c8" defer></script>
+    <script src="#https://api1.1503dev.top/legacy_visits_statistics/?callback=statisticsCallback&tag=adec7ca51e12b0e0f17c9a30222ef9c8" defer></script>
     <script>
         let totalData = [];
         let filteredData = [];
@@ -239,11 +240,9 @@
             dialogTitle.textContent = item.name;
             const infoRaw = item.info || item.desc || "";
             
-            // 检查 marked 库是否加载
             if (infoRaw.startsWith("md#")) {
                 const mdContent = infoRaw.substring(3);
                 try {
-                    // 使用全局 window.marked.parse 确保调用成功
                     dialogInfoText.innerHTML = window.marked.parse(mdContent);
                 } catch (e) {
                     dialogInfoText.textContent = mdContent;
@@ -273,13 +272,17 @@
             };
             img.src = imgPathPng;
 
-            dialogDownloadBtn.onclick = () => window.open(item.href, '_blank');
+            dialogDownloadBtn.onclick = () => {
+                window.open(item.href, '_blank');
+                dialog.open = false;
+            };
             dialogCancelBtn.onclick = () => dialog.open = false;
 
             githubProxyBtn.onclick = () => {
                 proxyDialogTitle.textContent = item.name + "";
                 proxyConfirmBtn.onclick = () => {
                     window.open('https://gh-proxy.org/' + item.href, '_blank');
+                    proxyDialog.open = false;
                 };
                 proxyDialog.open = true;
             };
