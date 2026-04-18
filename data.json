@@ -16,6 +16,12 @@
         "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc/Apollon_1.26.12_v5.2_64Bit.apk"
     },
     {
+        "name": "LuminaClient v4.1.9.2 Patched",
+        "desc": "20 MB MCv1.26.12.2",
+        "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc/Lumina.Client_4.1.9.2.Patched.apk",
+        "info": "移除了LuminaClient的验证\n\n注意：\n某些设备可能无法正常启动\n受限于中国网络防火墙，中国大陆网络仍然需要接入代理以访问Lumina服务器\n\n由1503Dev修补"
+    },
+    {
         "name": "LuminaClient – RC 4.1.9.2",
         "desc": "19 MB MCv1.26.12.2",
         "href": "https://github.com/TheProjectLumina/LuminaClient/releases/download/RC-4.1.9.2/app-release.apk",
