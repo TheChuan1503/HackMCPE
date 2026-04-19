@@ -1,30 +1,40 @@
 <!DOCTYPE html>
 <html class="mdui-theme-auto">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://static.1503dev.top/ajax/mdui/2.1.3/mdui.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="https://static.1503dev.top/ajax/mdui/2.1.3/mdui.global.js"></script>
+    <script>
+        mdui.setColorScheme(`#${Math.floor(Math.random() * 0xffffff).toString(16).padStart(6, '0')}`);
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <title>HackMCPE</title>
     <style>
         * {
             box-sizing: border-box;
         }
-        html, body {
+
+        html,
+        body {
             margin: 0;
             padding: 0;
             height: 100vh;
             overflow: hidden;
         }
+
         body {
             display: flex;
             flex-direction: column;
         }
+
         mdui-top-app-bar {
             flex-shrink: 0;
         }
+
         .main-container {
             flex: 1;
             display: flex;
@@ -33,6 +43,7 @@
             padding: 16px;
             overflow: hidden;
         }
+
         mdui-card {
             width: 100%;
             max-width: 800px;
@@ -41,20 +52,24 @@
             flex-direction: column;
             overflow: hidden;
         }
+
         .search-field {
             width: 100%;
             flex-shrink: 0;
         }
+
         .search-wrapper {
             padding: 8px 16px;
             flex-shrink: 0;
         }
+
         #data-list {
             overflow-y: auto;
             flex: 1;
             min-height: 0;
             padding: 0;
         }
+
         .pagination-container {
             display: flex;
             justify-content: center;
@@ -63,10 +78,12 @@
             gap: 12px;
             flex-shrink: 0;
         }
+
         #page-info {
             font-size: 14px;
             color: rgb(var(--mdui-color-on-surface-variant));
         }
+
         footer {
             text-align: center;
             padding: 12px;
@@ -74,46 +91,77 @@
             color: rgb(var(--mdui-color-on-surface-variant));
             flex-shrink: 0;
         }
+
         footer a {
             color: rgb(var(--mdui-color-primary));
             text-decoration: none;
         }
+
         .desc-text {
             font-size: 12px;
             color: rgb(var(--mdui-color-on-surface-variant));
         }
+
         .item-name {
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
             max-width: 100%;
         }
+
         .dialog-img {
             width: 100%;
             border-radius: 8px;
             margin-bottom: 16px;
             display: block;
+            cursor: pointer;
         }
-        #dialog-info-text {
-            line-height: 1.6;
+
+        .dialog-content {
             word-break: break-all;
+            font-size: 14px;
         }
-        /* 确保渲染后的图片和表格不溢出 */
+
         #dialog-info-text img {
             max-width: 100%;
             height: auto;
         }
+
         #dialog-info-text table {
             width: 100%;
             border-collapse: collapse;
         }
+
         .spacer {
             flex: 1;
         }
+
+        @media (min-width: 960px) {
+            .drawer {
+                margin-top: 64px;
+            }
+        }
+
+        .drawer-card {
+            width: 100%;
+            height: fit-content;
+            border-top-left-radius: 0%;
+            border-top-right-radius: 0%;
+        }
+
+        .font {
+            font-family: "Cascadia Code", "JetBrains Mono", "Fira Code", "Consolas", "PingFang SC", "Microsoft YaHei", "Source Code Pro", monospace;
+        }
+
+        mdui-dialog [slot="headline"] {
+            font-size: 0.8em;
+        }
     </style>
 </head>
+
 <body>
     <mdui-top-app-bar>
+        <mdui-button-icon icon="menu" class="drawer-btn"></mdui-button-icon>
         <mdui-top-app-bar-title>HackMCPE</mdui-top-app-bar-title>
     </mdui-top-app-bar>
 
@@ -121,7 +169,8 @@
         <mdui-card variant="elevated">
             <mdui-linear-progress id="loading-bar" style="display: none;"></mdui-linear-progress>
             <div class="search-wrapper">
-                <mdui-text-field class="search-field" placeholder="搜索..." icon="search--outlined" clearable></mdui-text-field>
+                <mdui-text-field class="search-field" placeholder="搜索..." icon="search--outlined"
+                    clearable></mdui-text-field>
             </div>
             <mdui-list id="data-list"></mdui-list>
             <div class="pagination-container">
@@ -130,15 +179,30 @@
                 <mdui-button-icon id="next-btn" icon="chevron_right--outlined"></mdui-button-icon>
             </div>
         </mdui-card>
+
+        <mdui-navigation-drawer close-on-overlay-click class="drawer">
+            <mdui-card variant="elevated" class="drawer-card mdui-prose">
+                <img src="header_card.png" alt="Header Card" style="width: 100%; height: auto;">
+            </mdui-card>
+            <footer class="font mdui-prose">
+                提供 Minecraft: Pocket Edition 的作弊程序<br><br>
+                Copyright 2023-2026 <a href="https://1503dev.top" target="_blank">1503Dev</a><br>
+                用户界面由 <a href="https://www.mdui.org/" target="_blank">MDUI</a> 强力驱动<br>
+                Markdown 解析由 <a href="https://marked.js.org/" target="_blank">Marked</a> 强力驱动<br>
+                网页由 <a href="https://github.com/TheChuan1503/HackMCPE/" target="_blank">Github</a> 托管<br>
+                资源来源于网络<br>
+            </footer>
+        </mdui-navigation-drawer>
     </div>
 
     <mdui-dialog id="detail-dialog" close-on-overlay-click>
         <span slot="headline" id="dialog-title"></span>
-        <div id="dialog-content">
+        <div id="dialog-content class="dialog-content">
             <img id="dialog-img" class="dialog-img" src="" alt="Preview" style="display: none;">
             <div id="dialog-info-text" class="mdui-typo"></div>
         </div>
-        <mdui-button slot="action" variant="text" id="github-proxy-btn" style="display: none;margin-left:0">代理下载</mdui-button>
+        <mdui-button slot="action" variant="text" id="github-proxy-btn"
+            style="display: none;margin-left:0">代理下载</mdui-button>
         <div slot="action" class="spacer"></div>
         <mdui-button slot="action" variant="text" id="dialog-cancel-btn">取消</mdui-button>
         <mdui-button slot="action" variant="tonal" id="dialog-download-btn">下载</mdui-button>
@@ -146,25 +210,26 @@
 
     <mdui-dialog id="proxy-dialog" close-on-overlay-click>
         <span slot="headline" id="proxy-dialog-title"></span>
-        <div id="proxy-dialog-content">
+        <div id="proxy-dialog-content" class="mdui-prose dialog-content">
             Github 下载代理服务由 <a href="https://gh-proxy.org/" target="_blank">GH-Proxy</a> 提供
         </div>
-        <mdui-button slot="action" variant="text" onclick="document.getElementById('proxy-dialog').open = false">取消</mdui-button>
+        <mdui-button slot="action" variant="text"
+            onclick="document.getElementById('proxy-dialog').open = false">取消</mdui-button>
         <mdui-button slot="action" variant="tonal" id="proxy-confirm-btn">下载</mdui-button>
     </mdui-dialog>
 
-    <footer>
-        Copyright 2023-2026 <a href="https://1503dev.top" target="_blank">1503Dev</a><br>
-        <span>资源来源于网络</span><br>
+    <footer class="font">
         <span id="statistics"></span>
     </footer>
-    
+
     <script>
-        function statisticsCallback(data){
+        function statisticsCallback(data) {
             document.getElementById('statistics').textContent = data.total + " Views"
         }
     </script>
-    <script src="https://api1.1503dev.top/legacy_visits_statistics/?callback=statisticsCallback&tag=adec7ca51e12b0e0f17c9a30222ef9c8" defer></script>
+    <script
+        src="#https://api1.1503dev.top/legacy_visits_statistics/?callback=statisticsCallback&tag=adec7ca51e12b0e0f17c9a30222ef9c8"
+        defer></script>
     <script>
         let totalData = [];
         let filteredData = [];
@@ -189,6 +254,9 @@
         const proxyDialog = document.getElementById('proxy-dialog');
         const proxyDialogTitle = document.getElementById('proxy-dialog-title');
         const proxyConfirmBtn = document.getElementById('proxy-confirm-btn');
+
+        const drawer = document.querySelector('.drawer');
+        const drawerBtn = document.querySelector('.drawer-btn');
 
         async function loadData() {
             loadingBar.style.display = 'block';
@@ -222,7 +290,7 @@
                     listItem.style.padding = "0";
                     listItem.innerHTML = `
                         <span class="item-name">${item.name}</span>
-                        <span slot="description" class="desc-text">${item.desc}</span>
+                        <span slot="description" class="desc-text font">${item.desc}</span>
                     `;
                     listItem.addEventListener('click', () => showDetails(item));
                     listElement.appendChild(listItem);
@@ -239,7 +307,7 @@
         function showDetails(item) {
             dialogTitle.textContent = item.name;
             const infoRaw = item.info || item.desc || "";
-            
+
             if (infoRaw.startsWith("md#")) {
                 const mdContent = infoRaw.substring(3);
                 try {
@@ -250,9 +318,9 @@
             } else {
                 dialogInfoText.innerHTML = infoRaw.replace(/\n/g, '<br>');
             }
-            
+
             dialogImg.style.display = 'none';
-            
+
             const isGithubRelease = item.href.includes('github.com') && item.href.includes('/releases/');
             githubProxyBtn.style.display = isGithubRelease ? 'inline-block' : 'none';
 
@@ -311,16 +379,26 @@
                 filteredData = totalData;
             } else {
                 filteredData = totalData.filter(item => {
-                    return (item.name || "").toLowerCase().includes(keyword) || 
-                           (item.desc || "").toLowerCase().includes(keyword) || 
-                           (item.info || "").toLowerCase().includes(keyword);
+                    return (item.name || "").toLowerCase().includes(keyword) ||
+                        (item.desc || "").toLowerCase().includes(keyword) ||
+                        (item.info || "").toLowerCase().includes(keyword);
                 });
             }
             currentPage = 1;
             renderList();
         });
 
+        drawerBtn.addEventListener('click', () => {
+            drawer.open = !drawer.open;
+        });
+
+
+        dialogImg.addEventListener('click', () => {
+            window.open(dialogImg.src, '_blank');
+        });
+
         loadData();
     </script>
 </body>
+
 </html>

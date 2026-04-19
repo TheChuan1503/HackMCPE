@@ -1,5 +1,11 @@
 [
     {
+        "name": "Apollon Client v5.51",
+        "desc": "380.3 MB MCv1.26.13 64-bit",
+        "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc/ApollonClient_1.26.13.1_64bit_V5.51.apk",
+        "info": "The Apollon Client | Minecraft 模组菜单客户端 v5.51 (.apk/64)\n\n 新内容：\n\n- 修改了物品栏清理器。\n- 客户端加载分为 3 个线程并进行了细微更改。（加快加载速度）\n- 为了性能删除了游戏音乐。（唱片除外）\n- 添加了物品栏清理器。\n- 客户端加载分为 2 个线程。（加快加载速度）\n- 实体按钮现在可以与客户端正常工作。"
+    },
+    {
         "name": "MCPE Apollon Client v5.41",
         "desc": "627 MB MCv1.26.13 64-bit",
         "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc/MCPE_Apollon_Client_1.26.13_v5.41_64Bit.apk",
@@ -17,9 +23,9 @@
     },
     {
         "name": "LuminaClient v4.1.9.2 Patched",
-        "desc": "20 MB MCv1.26.12.2",
+        "desc": "20 MB MCv1.26.12.2 64-bit",
         "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc/Lumina.Client_4.1.9.2.Patched.apk",
-        "info": "移除了LuminaClient的验证\n\n注意：\n某些设备可能无法正常启动\n受限于中国网络防火墙，中国大陆网络仍然需要接入代理以访问Lumina服务器\n\n由1503Dev修补"
+        "info": " · 移除了LuminaClient的验证\n · 可以更改LuminaClient检测的Minecraft的包名\n · 可以更改LuminaClient的验证服务器和更新服务器\n\n注意：\n中国大陆网络仍然需要接入代理以访问Lumina服务器\n\n由1503Dev修补"
     },
     {
         "name": "LuminaClient – RC 4.1.9.2",
@@ -42,7 +48,7 @@
         "name": "Flare Client 1.26.3",
         "desc": "330.69 MB MCv1.26.3 64-bit",
         "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc/flare-26.3-v8a.apk",
-        "info": "Flare Client 1.26.3 (26.3) \n\nMinecraft 修改版的更新，而非独立客户端。\n\n包含内容：\n\n1. 支持以资源包形式使用着色器。\n2. 无需 Xbox 账号即可进入服务器（如 FrizMine、Phoenix），并配有全新界面。但对于 NeverTime 或 Antralia 等服务器，仍需 Xbox 账号。\n\n更新内容：\n\n本次更新未添加新功能，仅是将版本从 1.26.2 (26.2) 升级至 1.26.3 (26.3)。\n\n无需删除已安装的 Minecraft —— 它们独立运行。"
+        "info": "Flare Client 1.26.3 (26.3)\n\n(不提供作弊功能)\n\nMinecraft 修改版的更新，而非独立客户端。\n\n包含内容：\n\n1. 支持以资源包形式使用着色器。\n2. 无需 Xbox 账号即可进入服务器（如 FrizMine、Phoenix），并配有全新界面。但对于 NeverTime 或 Antralia 等服务器，仍需 Xbox 账号。\n\n更新内容：\n\n本次更新未添加新功能，仅是将版本从 1.26.2 (26.2) 升级至 1.26.3 (26.3)。\n\n无需删除已安装的 Minecraft —— 它们独立运行。"
     },
     {
         "name": "WClient v21.0",
@@ -54,7 +60,7 @@
         "name": "Flare Client 1.26.2",
         "desc": "331 MB MCv1.26.2 64-bit",
         "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc/flare-26.2-v8a.apk",
-        "info": "Flare Client 1.26.2 (26.2)\n\n修改版 Minecraft 更新，而非独立客户端。\n\n包含内容：\n\n1. 支持资源包形式的光影。\n2. 无需 Xbox 账号即可通过新界面进入服务器（如 FrizMine、Phoenix）。但对于 NeverTime 或 Antralia 等服务器，仍需登录。\n\n更新内容：\n\n本次更新未添加新功能 —— 仅是从版本 1.26.1 (26.1) 升级至 1.26.2 (26.2)。\n\n无需卸载已安装的 Minecraft —— 它们可以独立运行。"
+        "info": "Flare Client 1.26.2 (26.2)\n\n(不提供作弊功能)\n\n修改版 Minecraft 更新，而非独立客户端。\n\n包含内容：\n\n1. 支持资源包形式的光影。\n2. 无需 Xbox 账号即可通过新界面进入服务器（如 FrizMine、Phoenix）。但对于 NeverTime 或 Antralia 等服务器，仍需登录。\n\n更新内容：\n\n本次更新未添加新功能 —— 仅是从版本 1.26.1 (26.1) 升级至 1.26.2 (26.2)。\n\n无需卸载已安装的 Minecraft —— 它们可以独立运行。"
     },
     {
         "name": "WClient v20.0",
