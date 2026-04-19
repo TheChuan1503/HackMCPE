@@ -99,10 +99,20 @@
         "info": "The Apollon Client | Minecraft 模组菜单客户端 v4.62（32 位 / 1.21.111）\n\n 更新内容：\n\n· 更新了 Xray 功能。\n· 改进了 Anti Bot。\n· 移除了 XP 赠送功能（因游戏开发者修复了相关机制，后续会尝试用其他方式实现）。\n· 移除了 Movement 类别中的部分功能（使用率较低）。"
     },
     {
+        "name": "Lumina RC 4.1.3",
+        "desc": "16.67 MB MCv1.21.100",
+        "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc/Lumina-RC-4.1.3-1.21.100.apk"
+    },
+    {
         "name": "Apollon v4.3 Ghost",
         "desc": "572 MB MCv1.21.94 64-bit",
         "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/1.21.94/Apollon_v4.3_1.21.94_Ghost_arm64-v8a.apk",
         "info": "The Apollon Client | Minecraft 1.21.94（64 位）\n模组菜单客户端 v4.2 \n 更新 \n\n 更新内容：\n\n· 客户端技术性更新，现在所有菜单尺寸统一。\n· 性能优化。\n· 修复了 32 位版本的崩溃问题。\n· 反击退功能改为按钮形式（因 32 位客户端会崩溃）。\n· 修复 Xray。\n· 全新菜单设计。\n· 重写 Kill Aura。\n· 添加 Hurt Check，仅在可命中时攻击实体。\n· 添加 Anti Knockback。\n· 添加 Force Creative Fly，绕过禁用飞行的反作弊。\n· 添加配置的加载/卸载功能。\n· 各种修复与添加（具体记不清了）。\n\n经典内容：\n 原创音乐\n 菜单背景\n 原创皮肤包（含漏洞/exploit 皮肤）"
+    },
+    {
+        "name": "MuCuteClient v2.6",
+        "desc": "68.9 MB MCv1.21.72",
+        "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc/MuCuteClient_2.6.apk"
     },
     {
         "name": "Apollon v3.61",

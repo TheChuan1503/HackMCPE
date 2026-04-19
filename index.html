@@ -4,6 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        (function () {
+            const ua = navigator.userAgent;
+
+            let brand = null;
+            let version = null;
+
+            const firefoxMatch = ua.match(/Firefox\/(\d+)/);
+            const chromeMatch = ua.match(/Chrome\/(\d+)/);
+            const versionMatch = ua.match(/Version\/(\d+)/);
+
+            if (firefoxMatch) {
+                brand = 'Firefox';
+                version = parseInt(firefoxMatch[1], 10);
+            } else if (chromeMatch) {
+                brand = 'Chromium';
+                version = parseInt(chromeMatch[1], 10);
+
+                if (ua.includes('wv') || versionMatch) {
+                    brand = 'WebView';
+                }
+            }
+
+            const isLowChromium = (brand === 'Chromium' || brand === 'WebView') && version < 89;
+            const isLowFirefox = brand === 'Firefox' && version < 92;
+
+            if (isLowChromium || isLowFirefox) {
+                const minVer = brand === 'Firefox' ? '92' : '89';
+                alert(`你的浏览器版本低于一般要求（${brand} ${minVer}），部分内容可能无法正常加载`);
+            }
+        })();
+    </script>
     <link rel="stylesheet" href="https://static.1503dev.top/ajax/mdui/2.1.3/mdui.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -197,7 +229,7 @@
 
     <mdui-dialog id="detail-dialog" close-on-overlay-click>
         <span slot="headline" id="dialog-title"></span>
-        <div id="dialog-content class="dialog-content">
+        <div id="dialog-content class=" dialog-content">
             <img id="dialog-img" class="dialog-img" src="" alt="Preview" style="display: none;">
             <div id="dialog-info-text" class="mdui-typo"></div>
         </div>
@@ -228,7 +260,7 @@
         }
     </script>
     <script
-        src="#https://api1.1503dev.top/legacy_visits_statistics/?callback=statisticsCallback&tag=adec7ca51e12b0e0f17c9a30222ef9c8"
+        src="https://api1.1503dev.top/legacy_visits_statistics/?callback=statisticsCallback&tag=adec7ca51e12b0e0f17c9a30222ef9c8"
         defer></script>
     <script>
         let totalData = [];
