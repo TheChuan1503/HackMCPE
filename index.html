@@ -141,12 +141,15 @@
             max-width: 100%;
         }
 
+        .highlighted-item {
+            background-color: rgba(var(--mdui-color-primary), 0.14);
+        }
+
         .dialog-img {
             width: 100%;
             border-radius: 8px;
             margin-bottom: 16px;
             display: block;
-            cursor: pointer;
         }
 
         .dialog-content {
@@ -267,6 +270,7 @@
         let filteredData = [];
         const itemsPerPage = 10;
         let currentPage = 1;
+        let selectedItemName = null;
 
         const listElement = document.getElementById('data-list');
         const pageInfo = document.getElementById('page-info');
@@ -324,6 +328,10 @@
                         <span class="item-name">${item.name}</span>
                         <span slot="description" class="desc-text font">${item.desc}</span>
                     `;
+                    if (selectedItemName && item.name === selectedItemName) {
+                        listItem.classList.add('highlighted-item');
+                        setTimeout(() => listItem.scrollIntoView({ behavior: 'smooth', block: 'center' }), 0);
+                    }
                     listItem.addEventListener('click', () => showDetails(item));
                     listElement.appendChild(listItem);
                 });
@@ -334,6 +342,30 @@
 
             prevBtn.disabled = currentPage === 1;
             nextBtn.disabled = currentPage === totalPages || totalPages === 0;
+        }
+
+        function getHashItemName() {
+            const hash = decodeURIComponent(window.location.hash.slice(1) || '').trim();
+            return hash || null;
+        }
+
+        function openHashItem() {
+            const hashName = getHashItemName();
+            if (!hashName || filteredData.length === 0) {
+                return;
+            }
+
+            const targetIndex = filteredData.findIndex(item => (item.name || '').toLowerCase() === hashName.toLowerCase());
+            if (targetIndex === -1) {
+                return;
+            }
+
+            const targetItem = filteredData[targetIndex];
+            const targetPage = Math.floor(targetIndex / itemsPerPage) + 1;
+            currentPage = targetPage;
+            selectedItemName = targetItem.name;
+            renderList();
+            showDetails(targetItem);
         }
 
         function showDetails(item) {
@@ -425,11 +457,8 @@
         });
 
 
-        dialogImg.addEventListener('click', () => {
-            window.open(dialogImg.src, '_blank');
-        });
-
-        loadData();
+        window.addEventListener('hashchange', openHashItem);
+        loadData().then(openHashItem);
     </script>
 </body>
 
