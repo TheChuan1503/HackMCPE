@@ -141,6 +141,12 @@
             max-width: 100%;
         }
 
+        .item-actions {
+            display: flex;
+            gap: 4px;
+            flex-shrink: 0;
+        }
+
         .highlighted-item {
             background-color: rgba(var(--mdui-color-primary), 0.14);
         }
@@ -253,6 +259,8 @@
         <mdui-button slot="action" variant="tonal" id="proxy-confirm-btn">下载</mdui-button>
     </mdui-dialog>
 
+    <mdui-snackbar id="snackbar"></mdui-snackbar>
+
     <footer class="font">
         <span id="statistics"></span>
     </footer>
@@ -322,17 +330,43 @@
                     const listItem = document.createElement('mdui-list-item');
                     listItem.setAttribute('headline-line', '1');
                     listItem.setAttribute('description-line', '1');
-                    listItem.setAttribute('clickable', '');
                     listItem.style.padding = "0";
-                    listItem.innerHTML = `
+                    
+                    const contentDiv = document.createElement('div');
+                    contentDiv.style.display = 'flex';
+                    contentDiv.style.width = '100%';
+                    contentDiv.style.alignItems = 'center';
+                    contentDiv.style.justifyContent = 'space-between';
+                    contentDiv.style.cursor = 'pointer';
+                    
+                    const textDiv = document.createElement('div');
+                    textDiv.style.flex = '1';
+                    textDiv.style.minWidth = '0';
+                    textDiv.innerHTML = `
                         <span class="item-name">${item.name}</span>
-                        <span slot="description" class="desc-text font">${item.desc}</span>
+                        <span class="desc-text font" style="display: block;">${item.desc}</span>
                     `;
+                    
+                    const actionsDiv = document.createElement('div');
+                    actionsDiv.className = 'item-actions';
+                    const copyBtn = document.createElement('mdui-button-icon');
+                    copyBtn.setAttribute('icon', 'content_copy--outlined');
+                    copyBtn.addEventListener('click', (e) => {
+                        e.stopPropagation();
+                        copyShareLink(item.name);
+                    });
+                    actionsDiv.appendChild(copyBtn);
+                    
+                    contentDiv.appendChild(textDiv);
+                    contentDiv.appendChild(actionsDiv);
+                    
+                    listItem.appendChild(contentDiv);
+                    
                     if (selectedItemName && item.name === selectedItemName) {
                         listItem.classList.add('highlighted-item');
                         setTimeout(() => listItem.scrollIntoView({ behavior: 'smooth', block: 'center' }), 0);
                     }
-                    listItem.addEventListener('click', () => showDetails(item));
+                    contentDiv.addEventListener('click', () => showDetails(item));
                     listElement.appendChild(listItem);
                 });
             }
@@ -456,6 +490,19 @@
             drawer.open = !drawer.open;
         });
 
+
+        function copyShareLink(itemName) {
+            const shareUrl = window.location.origin + window.location.pathname + '#' + encodeURIComponent(itemName);
+            navigator.clipboard.writeText(shareUrl).then(() => {
+                const snackbar = document.getElementById('snackbar');
+                snackbar.setAttribute('message', '已复制分享链接');
+                snackbar.open = true;
+            }).catch(() => {
+                const snackbar = document.getElementById('snackbar');
+                snackbar.setAttribute('message', '复制失败，请重试');
+                snackbar.open = true;
+            });
+        }
 
         window.addEventListener('hashchange', openHashItem);
         loadData().then(openHashItem);
