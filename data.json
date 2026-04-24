@@ -1,5 +1,11 @@
 [
     {
+        "name": "MCPE Apollon Client v5.54",
+        "desc": "380.3 MB MCv1.26.13 64-bit",
+        "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc/MCPE_Apollon_Client_1.26.13_v5.54_64Bit.apk",
+        "info": "The Apollon Client | Minecraft 模组菜单客户端 v5.54 (.apk/64) 补丁：\n\n新内容：\n\n- 修复了针对村民的 MobAura。\n- 修改了外挂的重新初始化机制。\n- 更新了游戏内存处理工具。\n（之前遇到崩溃的用户请检查）\n- MobAura 现在可以与 Java + Bedrock 服务器正常配合工作。\n- 修改了实体处理代码（优化）。"
+    },
+    {
         "name": "Apollon Client v5.51",
         "desc": "380.3 MB MCv1.26.13 64-bit",
         "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc/ApollonClient_1.26.13.1_64bit_V5.51.apk",
