@@ -32,7 +32,7 @@
 
             if (isLowChromium || isLowFirefox) {
                 const minVer = brand === 'Firefox' ? '92' : '89';
-                alert(`你的浏览器版本低于一般要求（${brand} ${minVer}），部分内容可能无法正常加载`);
+                alert(`你的浏览器版本低于最低要求（${brand} ${minVer}），部分内容可能无法正常加载`);
             }
         })();
     </script>
@@ -226,7 +226,7 @@
                 <img src="header_card.png" alt="Header Card" style="width: 100%; height: auto;">
             </mdui-card>
             <footer class="font mdui-prose">
-                提供 Minecraft: Pocket Edition 的作弊程序<br><br>
+                提供 Minecraft: Pocket Edition 的作弊器<br><br>
                 Copyright 2023-2026 <a href="https://1503dev.top" target="_blank">1503Dev</a><br>
                 用户界面由 <a href="https://www.mdui.org/" target="_blank">MDUI</a> 强力驱动<br>
                 Markdown 解析由 <a href="https://marked.js.org/" target="_blank">Marked</a> 强力驱动<br>
@@ -238,7 +238,7 @@
 
     <mdui-dialog id="detail-dialog" close-on-overlay-click>
         <span slot="headline" id="dialog-title"></span>
-        <div id="dialog-content class=" dialog-content">
+        <div id="dialog-content" class="dialog-content">
             <img id="dialog-img" class="dialog-img" src="" alt="Preview" style="display: none;">
             <div id="dialog-info-text" class="mdui-typo"></div>
         </div>

@@ -1,21 +1,27 @@
 [
     {
+        "name": "MCPE Apollon Client v5.55",
+        "desc": "380 MB MCv1.26.13 64-bit",
+        "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc/MCPE_Apollon_Client_1.26.13_v5.55_64Bit.apk",
+        "info": "md#The Apollon Client | Minecraft 模组菜单客户端 v5.55 (.apk/64) 补丁：\n\n新内容：\n\n- 加快加载速度。"
+    },
+    {
         "name": "MCPE Apollon Client v5.54",
         "desc": "380.3 MB MCv1.26.13 64-bit",
         "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc/MCPE_Apollon_Client_1.26.13_v5.54_64Bit.apk",
-        "info": "The Apollon Client | Minecraft 模组菜单客户端 v5.54 (.apk/64) 补丁：\n\n新内容：\n\n- 修复了针对村民的 MobAura。\n- 修改了外挂的重新初始化机制。\n- 更新了游戏内存处理工具。\n（之前遇到崩溃的用户请检查）\n- MobAura 现在可以与 Java + Bedrock 服务器正常配合工作。\n- 修改了实体处理代码（优化）。"
+        "info": "md#The Apollon Client | Minecraft 模组菜单客户端 v5.54 (.apk/64) 补丁：\n\n新内容：\n\n- 修复了针对村民的 MobAura。\n- 修改了外挂的重新初始化机制。\n- 更新了游戏内存处理工具。\n（之前遇到崩溃的用户请检查）\n- MobAura 现在可以与 Java + Bedrock 服务器正常配合工作。\n- 修改了实体处理代码（优化）。"
     },
     {
         "name": "Apollon Client v5.51",
         "desc": "380.3 MB MCv1.26.13 64-bit",
         "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc/ApollonClient_1.26.13.1_64bit_V5.51.apk",
-        "info": "The Apollon Client | Minecraft 模组菜单客户端 v5.51 (.apk/64)\n\n 新内容：\n\n- 修改了物品栏清理器。\n- 客户端加载分为 3 个线程并进行了细微更改。（加快加载速度）\n- 为了性能删除了游戏音乐。（唱片除外）\n- 添加了物品栏清理器。\n- 客户端加载分为 2 个线程。（加快加载速度）\n- 实体按钮现在可以与客户端正常工作。"
+        "info": "md#The Apollon Client | Minecraft 模组菜单客户端 v5.51 (.apk/64)\n\n 新内容：\n\n- 修改了物品栏清理器。\n- 客户端加载分为 3 个线程并进行了细微更改。（加快加载速度）\n- 为了性能删除了游戏音乐。（唱片除外）\n- 添加了物品栏清理器。\n- 客户端加载分为 2 个线程。（加快加载速度）\n- 实体按钮现在可以与客户端正常工作。"
     },
     {
         "name": "MCPE Apollon Client v5.41",
         "desc": "627 MB MCv1.26.13 64-bit",
         "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc/MCPE_Apollon_Client_1.26.13_v5.41_64Bit.apk",
-        "info": "The Apollon Client | Minecraft 模组菜单客户端 v5.41 补丁：\n\n新内容：\n\n- 修复了 Scaffold（自动架桥）。由于 Auto Fish（自动钓鱼）的代码，该功能此前可能无法工作。\n\n- 添加了 Auto Fish（自动钓鱼）。\n激活该功能。手持钓鱼竿靠近水边并使用鱼竿。客户端将开始为你自动钓鱼。可以通过再次使用鱼竿或切换物品栏槽位来停止自动钓鱼。\n\n- 为 No Break Delay（无破坏延迟）添加了 Multiplier（倍率）设置。\n\n- 减小了作弊菜单图标的大小。"
+        "info": "md#The Apollon Client | Minecraft 模组菜单客户端 v5.41 补丁：\n\n新内容：\n\n- 修复了 Scaffold（自动架桥）。由于 Auto Fish（自动钓鱼）的代码，该功能此前可能无法工作。\n- 添加了 Auto Fish（自动钓鱼）。\n激活该功能。手持钓鱼竿靠近水边并使用鱼竿。客户端将开始为你自动钓鱼。可以通过再次使用鱼竿或切换物品栏槽位来停止自动钓鱼。\n- 为 No Break Delay（无破坏延迟）添加了 Multiplier（倍率）设置。\n- 减小了作弊菜单图标的大小。"
     },
     {
         "name": "MCPE Apollon Client v5.31",
