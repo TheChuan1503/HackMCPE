@@ -1,5 +1,11 @@
 [
     {
+        "name": "MCPE Apollon Client v5.6",
+        "desc": "380 MB MCv1.26.13 64-bit",
+        "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc/MCPE_Apollon_Client_1.26.13_v5.6_64Bit.apk",
+        "info": "md#Apollon客户端 | Minecraft 模组菜单客户端 v5.6 (.apk/64位/1.26.13) 更新：\n\n新内容：\n\n- 添加了 Block Fly (支持领域服)。\n- 渲染代码优化。\n- 修复现有问题。"
+    },
+    {
         "name": "MCPE Apollon Client v5.56",
         "desc": "380.37 MB MCv1.26.13 64-bit",
         "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc/MCPE_Apollon_Client_1.26.13_v5.56_64Bit.apk",
