@@ -135,6 +135,12 @@
         "info": "The Apollon Client | Minecraft 模组菜单客户端 v4.62（32 位 / 1.21.111）\n\n 更新内容：\n\n· 更新了 Xray 功能。\n· 改进了 Anti Bot。\n· 移除了 XP 赠送功能（因游戏开发者修复了相关机制，后续会尝试用其他方式实现）。\n· 移除了 Movement 类别中的部分功能（使用率较低）。"
     },
     {
+        "name": "Grace Client v1.3",
+        "desc": "13 MB MCv1.21.8x-1.21.101",
+        "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc/havens-release-grace-1.3.apk",
+        "info": "md#1.21.8x ~ 1.21.101\n- 所有功能与之前的版本相同。"
+    },
+    {
         "name": "Lumina RC 4.1.3",
         "desc": "16.67 MB MCv1.21.100",
         "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc/Lumina-RC-4.1.3-1.21.100.apk"
