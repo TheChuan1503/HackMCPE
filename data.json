@@ -1,5 +1,17 @@
 [
     {
+        "name": "MCPE Apollon Client v5.63",
+        "desc": "386 MB MCv1.26.21 64-bit",
+        "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc/MCPE_Apollon_Client_1.26.21_v5.63_64Bit.apk",
+        "info": "md#The Apollon Client | Minecraft 模组菜单客户端 v5.63 (.apk/64 位/1.26.21) 更新：\n\n新内容：\n\n- 修复现有问题。"
+    },
+    {
+        "name": "MCPE Apollon Client v5.62",
+        "desc": "386 MB MCv1.26.20 64-bit",
+        "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc/MCPE_Apollon_Client_1.26.20_v5.62_64Bit.apk",
+        "info": "md#The Apollon Client | Minecraft 模组菜单客户端 v5.62 (.apk/64 位/1.26.20) 更新：\n\n新内容：\n\n- 修复了幸运恶魂和铜傀儡的杀戮光环。"
+    },
+    {
         "name": "ProtoHax v2.0.2",
         "desc": "70.86 MB MCv1.26.20",
         "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc/ProtoHax.v2.0.2.apk",
