@@ -1,5 +1,11 @@
 [
     {
+        "name": "WClient v28.0-2",
+        "desc": "17.1MB MCv1.26.21",
+        "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc/WClientv28.0-2.apk",
+        "info": "新版本\n\n修复了崩溃\n添加了Pop计数器"
+    },
+    {
         "name": "MCPE Apollon Client v5.63",
         "desc": "386 MB MCv1.26.21 64-bit",
         "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc/MCPE_Apollon_Client_1.26.21_v5.63_64Bit.apk",
