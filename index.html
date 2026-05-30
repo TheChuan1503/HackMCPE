@@ -267,7 +267,7 @@
 
     <script>
         function statisticsCallback(data) {
-            document.getElementById('statistics').textContent = data.total + " Views"
+            document.getElementById('statistics').textContent = data.todayTotal + '/' + data.total + " Views"
         }
     </script>
     <script
@@ -331,14 +331,14 @@
                     listItem.setAttribute('headline-line', '1');
                     listItem.setAttribute('description-line', '1');
                     listItem.style.padding = "0";
-                    
+
                     const contentDiv = document.createElement('div');
                     contentDiv.style.display = 'flex';
                     contentDiv.style.width = '100%';
                     contentDiv.style.alignItems = 'center';
                     contentDiv.style.justifyContent = 'space-between';
                     contentDiv.style.cursor = 'pointer';
-                    
+
                     const textDiv = document.createElement('div');
                     textDiv.style.flex = '1';
                     textDiv.style.minWidth = '0';
@@ -346,7 +346,7 @@
                         <span class="item-name">${item.name}</span>
                         <span class="desc-text font" style="display: block;">${item.desc}</span>
                     `;
-                    
+
                     const actionsDiv = document.createElement('div');
                     actionsDiv.className = 'item-actions';
                     const copyBtn = document.createElement('mdui-button-icon');
@@ -356,12 +356,12 @@
                         copyShareLink(item.name);
                     });
                     actionsDiv.appendChild(copyBtn);
-                    
+
                     contentDiv.appendChild(textDiv);
                     contentDiv.appendChild(actionsDiv);
-                    
+
                     listItem.appendChild(contentDiv);
-                    
+
                     if (selectedItemName && item.name === selectedItemName) {
                         listItem.classList.add('highlighted-item');
                         setTimeout(() => listItem.scrollIntoView({ behavior: 'smooth', block: 'center' }), 0);
@@ -494,13 +494,13 @@
         function copyShareLink(itemName) {
             const shareUrl = window.location.origin + window.location.pathname + '#' + encodeURIComponent(itemName);
             navigator.clipboard.writeText(shareUrl).then(() => {
-                const snackbar = document.getElementById('snackbar');
-                snackbar.setAttribute('message', '已复制分享链接');
-                snackbar.open = true;
+                mdui.snackbar({
+                    message: "已复制链接"
+                });
             }).catch(() => {
-                const snackbar = document.getElementById('snackbar');
-                snackbar.setAttribute('message', '复制失败，请重试');
-                snackbar.open = true;
+                mdui.snackbar({
+                    message: "复制失败"
+                });
             });
         }
 
