@@ -430,13 +430,13 @@
                 dialogImg.style.display = 'block';
             };
             img.onerror = () => {
-                if (img.src.endsWith('.png')) {
-                    img.src = imgPathJpg;
+                if (img.src.endsWith('.jpg')) {
+                    img.src = imgPathPng;
                 } else {
                     dialogImg.style.display = 'none';
                 }
             };
-            img.src = imgPathPng;
+            img.src = imgPathJpg;
 
             dialogDownloadBtn.onclick = () => {
                 window.open(item.href, '_blank');
