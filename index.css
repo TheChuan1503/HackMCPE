@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+mdui-top-app-bar {
+    flex-shrink: 0;
+}
+
+.main-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    overflow: hidden;
+}
+
+mdui-card {
+    width: 100%;
+    max-width: 800px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.search-field {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.search-wrapper {
+    padding: 8px 16px;
+    flex-shrink: 0;
+}
+
+#data-list {
+    overflow-y: auto;
+    flex: 1;
+    min-height: 0;
+    padding: 0;
+}
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    gap: 12px;
+    flex-shrink: 0;
+}
+
+#page-info {
+    font-size: 14px;
+    color: rgb(var(--mdui-color-on-surface-variant));
+}
+
+footer {
+    text-align: center;
+    padding: 12px;
+    font-size: 12px;
+    color: rgb(var(--mdui-color-on-surface-variant));
+    flex-shrink: 0;
+}
+
+footer a {
+    color: rgb(var(--mdui-color-primary));
+    text-decoration: none;
+}
+
+.desc-text {
+    font-size: 12px;
+    color: rgb(var(--mdui-color-on-surface-variant));
+}
+
+.item-name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100%;
+}
+
+.item-actions {
+    display: flex;
+    gap: 4px;
+    flex-shrink: 0;
+}
+
+.highlighted-item {
+    background-color: rgba(var(--mdui-color-primary), 0.14);
+}
+
+.dialog-img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    display: block;
+}
+
+.dialog-content {
+    word-break: break-all;
+    font-size: 14px;
+}
+
+#dialog-info-text img {
+    max-width: 100%;
+    height: auto;
+}
+
+#dialog-info-text table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.spacer {
+    flex: 1;
+}
+
+@media (min-width: 960px) {
+    .drawer {
+        margin-top: 64px;
+    }
+}
+
+.drawer-card {
+    width: 100%;
+    height: fit-content;
+    border-top-left-radius: 0%;
+    border-top-right-radius: 0%;
+}
+
+.font {
+    font-family: "Cascadia Code", "JetBrains Mono", "Fira Code", "Consolas", "PingFang SC", "Microsoft YaHei", "Source Code Pro", monospace;
+}
+
+mdui-dialog [slot="headline"] {
+    font-size: 0.8em;
+}

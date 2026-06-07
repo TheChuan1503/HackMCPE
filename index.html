@@ -45,165 +45,14 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <title>HackMCPE</title>
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        html,
-        body {
-            margin: 0;
-            padding: 0;
-            height: 100vh;
-            overflow: hidden;
-        }
-
-        body {
-            display: flex;
-            flex-direction: column;
-        }
-
-        mdui-top-app-bar {
-            flex-shrink: 0;
-        }
-
-        .main-container {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 16px;
-            overflow: hidden;
-        }
-
-        mdui-card {
-            width: 100%;
-            max-width: 800px;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            overflow: hidden;
-        }
-
-        .search-field {
-            width: 100%;
-            flex-shrink: 0;
-        }
-
-        .search-wrapper {
-            padding: 8px 16px;
-            flex-shrink: 0;
-        }
-
-        #data-list {
-            overflow-y: auto;
-            flex: 1;
-            min-height: 0;
-            padding: 0;
-        }
-
-        .pagination-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 12px;
-            gap: 12px;
-            flex-shrink: 0;
-        }
-
-        #page-info {
-            font-size: 14px;
-            color: rgb(var(--mdui-color-on-surface-variant));
-        }
-
-        footer {
-            text-align: center;
-            padding: 12px;
-            font-size: 12px;
-            color: rgb(var(--mdui-color-on-surface-variant));
-            flex-shrink: 0;
-        }
-
-        footer a {
-            color: rgb(var(--mdui-color-primary));
-            text-decoration: none;
-        }
-
-        .desc-text {
-            font-size: 12px;
-            color: rgb(var(--mdui-color-on-surface-variant));
-        }
-
-        .item-name {
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            max-width: 100%;
-        }
-
-        .item-actions {
-            display: flex;
-            gap: 4px;
-            flex-shrink: 0;
-        }
-
-        .highlighted-item {
-            background-color: rgba(var(--mdui-color-primary), 0.14);
-        }
-
-        .dialog-img {
-            width: 100%;
-            border-radius: 8px;
-            margin-bottom: 16px;
-            display: block;
-        }
-
-        .dialog-content {
-            word-break: break-all;
-            font-size: 14px;
-        }
-
-        #dialog-info-text img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        #dialog-info-text table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-
-        .spacer {
-            flex: 1;
-        }
-
-        @media (min-width: 960px) {
-            .drawer {
-                margin-top: 64px;
-            }
-        }
-
-        .drawer-card {
-            width: 100%;
-            height: fit-content;
-            border-top-left-radius: 0%;
-            border-top-right-radius: 0%;
-        }
-
-        .font {
-            font-family: "Cascadia Code", "JetBrains Mono", "Fira Code", "Consolas", "PingFang SC", "Microsoft YaHei", "Source Code Pro", monospace;
-        }
-
-        mdui-dialog [slot="headline"] {
-            font-size: 0.8em;
-        }
-    </style>
+    <link rel="stylesheet" href="./index.css">
 </head>
 
 <body>
     <mdui-top-app-bar>
         <mdui-button-icon icon="menu" class="drawer-btn"></mdui-button-icon>
         <mdui-top-app-bar-title>HackMCPE</mdui-top-app-bar-title>
+        <mdui-button-icon icon="people" class="right-drawer-btn"></mdui-button-icon>
     </mdui-top-app-bar>
 
     <div class="main-container">
@@ -223,15 +72,51 @@
 
         <mdui-navigation-drawer close-on-overlay-click class="drawer">
             <mdui-card variant="elevated" class="drawer-card mdui-prose">
-                <img src="header_card.png" alt="Header Card" style="width: 100%; height: auto;">
+                <img src="header_card.jpg" alt="Header Card" style="width: 100%; height: auto;">
             </mdui-card>
             <footer class="font mdui-prose">
-                提供 Minecraft: Pocket Edition 的作弊器<br><br>
+                提供 Minecraft: Pocket Edition 的作弊器<br>
+                <br>
                 Copyright 2023-2026 <a href="https://1503dev.top" target="_blank">1503Dev</a><br>
                 用户界面由 <a href="https://www.mdui.org/" target="_blank">MDUI</a> 强力驱动<br>
                 Markdown 解析由 <a href="https://marked.js.org/" target="_blank">Marked</a> 强力驱动<br>
-                网页由 <a href="https://github.com/TheChuan1503/HackMCPE/" target="_blank">Github</a> 托管<br>
+                网页和部分资源由 <a href="https://github.com/TheChuan1503/HackMCPE/" target="_blank">Github</a> 托管<br>
+                <br>
                 资源来源于网络<br>
+            </footer>
+        </mdui-navigation-drawer>
+
+        <mdui-navigation-drawer close-on-overlay-click class="drawer drawer-right" placement="right">
+            <mdui-card variant="elevated" class="drawer-card mdui-prose">
+                <img src="header_card_right.jpg" alt="Header Card" style="width: 100%; height: auto;">
+            </mdui-card>
+            <footer class="font mdui-prose">
+                制作这些作弊器的人们<br>
+                <br>
+                ZEFF - <a href="https://t.me/zeff_cheats" target="_blank">Telegram</a><br>
+                MCPE Apollon Client
+                <br><br>
+                陈梓希 - <a href="https://t.me/protohax" target="_blank">Telegram</a>|<a href="https://discord.gg/5bvb3s8zQm" target="_blank">Discord</a><br>
+                ProtoHax
+                <br><br>
+                1503Dev - <a href="https://1503dev.top" target="_blank">Website</a>|<a href="https://github.com/1503Dev" target="_blank">Github</a><br>
+                Circlor
+                <br><br>
+                lyssadev - <a href="https://github.com/lyssadev" target="_blank">Github</a><br>
+                Lumina Client
+                <br><br>
+                Hiro<br>
+                Hirobox
+                <br><br>
+                稽静小白 - <a href="https://qun.qq.com/universal-share/share?ac=1&svctype=5&tempid=h5_group_info&busi_data=eyJncm91cENvZGUiOiI5MTU0NDIzNzYifQ%3D%3D" target="_blank">QQ群</a><br>
+                Aronabox
+                <br><br>
+                Kitsuri Studios - <a href="https://discord.gg/kitsuri" target="_blank">Discord</a><br>
+                Ambient
+                <br><br>
+                以及社区的其他人们
+                <br><br>
+                (排名不分先后)
             </footer>
         </mdui-navigation-drawer>
     </div>
@@ -239,6 +124,7 @@
     <mdui-dialog id="detail-dialog" close-on-overlay-click>
         <span slot="headline" id="dialog-title"></span>
         <div id="dialog-content" class="dialog-content">
+            <mdui-linear-progress id="dialog-img-loading" style="display: none;"></mdui-linear-progress>
             <img id="dialog-img" class="dialog-img" src="" alt="Preview" style="display: none;">
             <div id="dialog-info-text" class="mdui-typo"></div>
         </div>
@@ -267,246 +153,13 @@
 
     <script>
         function statisticsCallback(data) {
-            document.getElementById('statistics').textContent = data.todayTotal + '/' + data.total + " Views"
+            document.getElementById('statistics').textContent = `${data.todayUsers}/${data.users} | ${data.todayTotal}/${data.total} Views`
         }
     </script>
     <script
         src="https://api1.1503dev.top/legacy_visits_statistics/?callback=statisticsCallback&tag=adec7ca51e12b0e0f17c9a30222ef9c8"
         defer></script>
-    <script>
-        let totalData = [];
-        let filteredData = [];
-        const itemsPerPage = 10;
-        let currentPage = 1;
-        let selectedItemName = null;
-
-        const listElement = document.getElementById('data-list');
-        const pageInfo = document.getElementById('page-info');
-        const prevBtn = document.getElementById('prev-btn');
-        const nextBtn = document.getElementById('next-btn');
-        const searchField = document.querySelector('.search-field');
-        const loadingBar = document.getElementById('loading-bar');
-
-        const dialog = document.getElementById('detail-dialog');
-        const dialogTitle = document.getElementById('dialog-title');
-        const dialogImg = document.getElementById('dialog-img');
-        const dialogInfoText = document.getElementById('dialog-info-text');
-        const dialogDownloadBtn = document.getElementById('dialog-download-btn');
-        const dialogCancelBtn = document.getElementById('dialog-cancel-btn');
-        const githubProxyBtn = document.getElementById('github-proxy-btn');
-
-        const proxyDialog = document.getElementById('proxy-dialog');
-        const proxyDialogTitle = document.getElementById('proxy-dialog-title');
-        const proxyConfirmBtn = document.getElementById('proxy-confirm-btn');
-
-        const drawer = document.querySelector('.drawer');
-        const drawerBtn = document.querySelector('.drawer-btn');
-
-        async function loadData() {
-            loadingBar.style.display = 'block';
-            try {
-                const response = await fetch('./data.json');
-                totalData = await response.json();
-                filteredData = totalData;
-                renderList();
-            } catch (error) {
-                totalData = [];
-                filteredData = [];
-                renderList();
-            }
-            loadingBar.style.display = 'none';
-        }
-
-        function renderList() {
-            const start = (currentPage - 1) * itemsPerPage;
-            const end = start + itemsPerPage;
-            const pageData = filteredData.slice(start, end);
-
-            listElement.innerHTML = '';
-            if (pageData.length === 0) {
-                listElement.innerHTML = '<mdui-list-item>暂无数据</mdui-list-item>';
-            } else {
-                pageData.forEach((item) => {
-                    const listItem = document.createElement('mdui-list-item');
-                    listItem.setAttribute('headline-line', '1');
-                    listItem.setAttribute('description-line', '1');
-                    listItem.style.padding = "0";
-
-                    const contentDiv = document.createElement('div');
-                    contentDiv.style.display = 'flex';
-                    contentDiv.style.width = '100%';
-                    contentDiv.style.alignItems = 'center';
-                    contentDiv.style.justifyContent = 'space-between';
-                    contentDiv.style.cursor = 'pointer';
-
-                    const textDiv = document.createElement('div');
-                    textDiv.style.flex = '1';
-                    textDiv.style.minWidth = '0';
-                    textDiv.innerHTML = `
-                        <span class="item-name">${item.name}</span>
-                        <span class="desc-text font" style="display: block;">${item.desc}</span>
-                    `;
-
-                    const actionsDiv = document.createElement('div');
-                    actionsDiv.className = 'item-actions';
-                    const copyBtn = document.createElement('mdui-button-icon');
-                    copyBtn.setAttribute('icon', 'content_copy--outlined');
-                    copyBtn.addEventListener('click', (e) => {
-                        e.stopPropagation();
-                        copyShareLink(item.name);
-                    });
-                    actionsDiv.appendChild(copyBtn);
-
-                    contentDiv.appendChild(textDiv);
-                    contentDiv.appendChild(actionsDiv);
-
-                    listItem.appendChild(contentDiv);
-
-                    if (selectedItemName && item.name === selectedItemName) {
-                        listItem.classList.add('highlighted-item');
-                        setTimeout(() => listItem.scrollIntoView({ behavior: 'smooth', block: 'center' }), 0);
-                    }
-                    contentDiv.addEventListener('click', () => showDetails(item));
-                    listElement.appendChild(listItem);
-                });
-            }
-
-            const totalPages = Math.max(1, Math.ceil(filteredData.length / itemsPerPage));
-            pageInfo.textContent = `第 ${currentPage} / ${totalPages} 页`;
-
-            prevBtn.disabled = currentPage === 1;
-            nextBtn.disabled = currentPage === totalPages || totalPages === 0;
-        }
-
-        function getHashItemName() {
-            const hash = decodeURIComponent(window.location.hash.slice(1) || '').trim();
-            return hash || null;
-        }
-
-        function openHashItem() {
-            const hashName = getHashItemName();
-            if (!hashName || filteredData.length === 0) {
-                return;
-            }
-
-            const targetIndex = filteredData.findIndex(item => (item.name || '').toLowerCase() === hashName.toLowerCase());
-            if (targetIndex === -1) {
-                return;
-            }
-
-            const targetItem = filteredData[targetIndex];
-            const targetPage = Math.floor(targetIndex / itemsPerPage) + 1;
-            currentPage = targetPage;
-            selectedItemName = targetItem.name;
-            renderList();
-            showDetails(targetItem);
-        }
-
-        function showDetails(item) {
-            dialogTitle.textContent = item.name;
-            const infoRaw = item.info || item.desc || "";
-
-            if (infoRaw.startsWith("md#")) {
-                const mdContent = infoRaw.substring(3);
-                try {
-                    dialogInfoText.innerHTML = window.marked.parse(mdContent);
-                } catch (e) {
-                    dialogInfoText.textContent = mdContent;
-                }
-            } else {
-                dialogInfoText.innerHTML = infoRaw.replace(/\n/g, '<br>');
-            }
-
-            dialogImg.style.display = 'none';
-
-            const isGithubRelease = item.href.includes('github.com') && item.href.includes('/releases/');
-            githubProxyBtn.style.display = isGithubRelease ? 'inline-block' : 'none';
-
-            const imgPathPng = `./img/${item.name}.png`;
-            const imgPathJpg = `./img/${item.name}.jpg`;
-            const img = new Image();
-            img.onload = () => {
-                dialogImg.src = img.src;
-                dialogImg.style.display = 'block';
-            };
-            img.onerror = () => {
-                if (img.src.endsWith('.jpg')) {
-                    img.src = imgPathPng;
-                } else {
-                    dialogImg.style.display = 'none';
-                }
-            };
-            img.src = imgPathJpg;
-
-            dialogDownloadBtn.onclick = () => {
-                window.open(item.href, '_blank');
-                dialog.open = false;
-            };
-            dialogCancelBtn.onclick = () => dialog.open = false;
-
-            githubProxyBtn.onclick = () => {
-                proxyDialogTitle.textContent = item.name + "";
-                proxyConfirmBtn.onclick = () => {
-                    window.open('https://gh-proxy.org/' + item.href, '_blank');
-                    proxyDialog.open = false;
-                };
-                proxyDialog.open = true;
-            };
-
-            dialog.open = true;
-        }
-
-        prevBtn.addEventListener('click', () => {
-            if (currentPage > 1) {
-                currentPage--;
-                renderList();
-            }
-        });
-
-        nextBtn.addEventListener('click', () => {
-            const totalPages = Math.ceil(filteredData.length / itemsPerPage);
-            if (currentPage < totalPages) {
-                currentPage++;
-                renderList();
-            }
-        });
-
-        searchField.addEventListener('input', (e) => {
-            const keyword = e.target.value.toLowerCase().trim();
-            if (keyword === '') {
-                filteredData = totalData;
-            } else {
-                filteredData = totalData.filter(item => {
-                    return (item.name || "").toLowerCase().includes(keyword) ||
-                        (item.desc || "").toLowerCase().includes(keyword) ||
-                        (item.info || "").toLowerCase().includes(keyword);
-                });
-            }
-            currentPage = 1;
-            renderList();
-        });
-
-        drawerBtn.addEventListener('click', () => {
-            drawer.open = !drawer.open;
-        });
-
-
-        function copyShareLink(itemName) {
-            const shareUrl = window.location.origin + window.location.pathname + '#' + encodeURIComponent(itemName);
-            navigator.clipboard.writeText(shareUrl).then(() => {
-                mdui.snackbar({
-                    message: "已复制链接"
-                });
-            }).catch(() => {
-                mdui.snackbar({
-                    message: "复制失败"
-                });
-            });
-        }
-
-        window.addEventListener('hashchange', openHashItem);
-        loadData().then(openHashItem);
-    </script>
+    <script src="./index.js"></script>
 </body>
 
 </html>
