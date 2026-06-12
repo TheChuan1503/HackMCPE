@@ -20,6 +20,8 @@ const dialogDownloadBtn = document.getElementById('dialog-download-btn');
 const dialogCancelBtn = document.getElementById('dialog-cancel-btn');
 const githubProxyBtn = document.getElementById('github-proxy-btn');
 
+const proxyMenu= document.getElementById('menu-proxy');
+
 const proxyDialog = document.getElementById('proxy-dialog');
 const proxyDialogTitle = document.getElementById('proxy-dialog-title');
 const proxyConfirmBtn = document.getElementById('proxy-confirm-btn');
@@ -175,12 +177,8 @@ function showDetails(item) {
     dialogCancelBtn.onclick = () => dialog.open = false;
 
     githubProxyBtn.onclick = () => {
-        proxyDialogTitle.textContent = item.name + "";
-        proxyConfirmBtn.onclick = () => {
-            window.open('https://gh-proxy.org/' + item.href, '_blank');
-            proxyDialog.open = false;
-        };
-        proxyDialog.open = true;
+        proxyMenu.open = true
+        window.dest = item.href;
     };
 
     dialog.open = true;
@@ -236,6 +234,18 @@ function copyShareLink(itemName) {
         mdui.snackbar({
             message: "复制失败"
         });
+    });
+}
+
+function proxyDownload(proxy) {
+    window.open('https://' + proxy + '/' + window.dest, '_blank');
+}
+
+function proxyDownloadAbout() {
+    mdui.dialog({
+        headline: '什么是代理下载？',
+        description: '代理下载就是通过异地节点代理访问 Github 的服务器，在某些情况可以提高 Github 资源下载速度。如果某个节点无法下载或下载过慢，你可以尝试切换其他的节点下载',
+        closeOnOverlayClick: true
     });
 }
 

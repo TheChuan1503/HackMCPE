@@ -31,7 +31,7 @@
             const isLowFirefox = brand === 'Firefox' && version < 92;
 
             if (isLowChromium || isLowFirefox) {
-                const minVer = brand === 'Firefox' ? '92' : '89';
+                const minVer = brand === 'Firefox' ? '92': '89';
                 alert(`你的浏览器版本低于最低要求（${brand} ${minVer}），部分内容可能无法正常加载`);
             }
         })();
@@ -128,8 +128,20 @@
             <img id="dialog-img" class="dialog-img" src="" alt="Preview" style="display: none;">
             <div id="dialog-info-text" class="mdui-typo"></div>
         </div>
+        <mdui-dropdown id="menu-proxy">
+            <mdui-menu>
+                <mdui-menu-item onclick="proxyDownload('gh.xxooo.cf')">gh.xxooo.cf</mdui-menu-item>
+                <mdui-menu-item onclick="proxyDownload('gh-proxy.org')">gh-proxy.org</mdui-menu-item>
+                <mdui-menu-item onclick="proxyDownload('github.chenc.dev')">github.chenc.dev</mdui-menu-item>
+                <mdui-menu-item onclick="proxyDownload('ghproxy.net')">ghproxy.net</mdui-menu-item>
+                <mdui-menu-item onclick="proxyDownloadAbout()">
+                    <i>什么是代理下载?&nbsp;</i>
+                    <mdui-icon slot="icon" name="help"></mdui-icon>
+                </mdui-menu-item>
+            </mdui-menu>
+        </mdui-dropdown>
         <mdui-button slot="action" variant="text" id="github-proxy-btn"
-            style="display: none;margin-left:0">代理下载</mdui-button>
+            style="display: none;margin-left:0">代理</mdui-button>
         <div slot="action" class="spacer"></div>
         <mdui-button slot="action" variant="text" id="dialog-cancel-btn">取消</mdui-button>
         <mdui-button slot="action" variant="tonal" id="dialog-download-btn">下载</mdui-button>
@@ -157,7 +169,7 @@
         }
     </script>
     <script
-        src="https://api1.1503dev.top/legacy_visits_statistics/?callback=statisticsCallback&tag=adec7ca51e12b0e0f17c9a30222ef9c8"
+        src="#https://api1.1503dev.top/legacy_visits_statistics/?callback=statisticsCallback&tag=adec7ca51e12b0e0f17c9a30222ef9c8"
         defer></script>
     <script src="./index.js"></script>
 </body>
