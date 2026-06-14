@@ -1,5 +1,11 @@
 [
     {
+        "name": "WClient v30.0",
+        "desc": "17.2 MB v1.26.21",
+        "href": "https://github.com/RetrivedMods/WClient/releases/download/WClientv30.0/WClientv30.0.apk",
+        "info": "添加了 Ping 伪装\n修复了崩溃并提高了稳定性\n更新了设置系统\n修复了防水晶问题\n修复了 WGUI 错误\n添加了 Phase 模块（可能在 Java 服务器上无法使用）\n移除了自动图腾延迟"
+    },
+    {
         "name": "Ambient v1.0.6 破解汉化版",
         "desc": "31.4 MB v1.26.10.4/1.26.21.1/1.26.22.1 64-bit",
         "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc/Ambient_1.0.6_mh_patched_zh.apk",
