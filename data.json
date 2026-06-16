@@ -1,5 +1,11 @@
 [
     {
+        "name": "MCPE Apollon Client v5.7",
+        "desc": "385 MB v1.26.23 64-bit",
+        "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc/MCPE_Apollon_Client_1.26.23_v5.7_64Bit.apk",
+        "info": "md#The Apollon Client | Minecraft 模组菜单客户端 v5.7 (.apk/64 位/1.26.23) 更新：\n\n新内容：\n\n- 更新了技术部分。\n- 增加了查看隐藏方块功能。  \n感谢 Voidline Client 团队。"
+    },
+    {
         "name": "WClient v30.0",
         "desc": "17.2 MB v1.26.21",
         "href": "https://github.com/RetrivedMods/WClient/releases/download/WClientv30.0/WClientv30.0.apk",
@@ -15,7 +21,7 @@
         "name": "MCPE Apollon Client v5.66",
         "desc": "385 MB v1.26.23 64-bit",
         "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc/MCPE_Apollon_Client_1.26.23_v5.66_64Bit.apk",
-        "info": "The Apollon Client | Minecraft 模组菜单客户端 v5.66 (.apk/64 位/1.26.23) 补丁：\n\n新内容：\n\n- 整个代码的重大优化。"
+        "info": "md#The Apollon Client | Minecraft 模组菜单客户端 v5.66 (.apk/64 位/1.26.23) 补丁：\n\n新内容：\n\n- 整个代码的重大优化。"
     },
     {
         "name": "WClient v29.0-1",

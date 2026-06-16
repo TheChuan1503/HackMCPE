@@ -1,6 +1,6 @@
 let totalData = [];
 let filteredData = [];
-const itemsPerPage = 10;
+const itemsPerPage = 9;
 let currentPage = 1;
 let selectedItemName = null;
 
