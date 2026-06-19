@@ -1,5 +1,11 @@
 [
     {
+        "name": "LuminaClient – RC 4.1.11",
+        "desc": "19.1 MB v1.26.30.5",
+        "href": "https://github.com/TheProjectLumina/LuminaClient/releases/download/RC-4.1.11/app-release.apk",
+        "info": "md### 更新日志：\n[+] 已添加对 Minecraft 1.26.30.5 的完整支持"
+    },
+    {
         "name": "MCPE Apollon Client v5.7",
         "desc": "385 MB v1.26.23 64-bit",
         "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc/MCPE_Apollon_Client_1.26.23_v5.7_64Bit.apk",
