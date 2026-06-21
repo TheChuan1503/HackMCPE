@@ -1,5 +1,11 @@
 [
     {
+        "name": "WClient v31.0",
+        "desc": "17 MB v1.26.30",
+        "href": "https://github.com/RetrivedMods/WClient/releases/download/WClientv31.0/WClientv31.0.apk",
+        "info": "添加了Minecraft v1.26.30的支持\n修复了背包物品问题\n修复一些崩溃"
+    },
+    {
         "name": "LuminaClient – RC 4.1.11.2 (Hotfix)",
         "desc": "19.1 MB v1.26.31.1",
         "href": "https://github.com/TheProjectLumina/LuminaClient/releases/download/RC-4.1.11.2/app-release.apk",
