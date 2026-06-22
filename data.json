@@ -1,5 +1,11 @@
 [
     {
+        "name": "LuminaClient – RC 4.1.11.3 (Hotterfix)",
+        "desc": "19.1 MB v1.26.31.1",
+        "href": "https://github.com/TheProjectLumina/LuminaClient/releases/download/RC-4.1.11.3/app-release.apk",
+        "info": "md### 更新日志：\n- [+] 已添加对 Minecraft 1.26.31.1 的完整支持  \n- [*] 修复了一些 v4.1.11.2 的问题  \n- [+] 减少了应用大小和提升了两倍加入游戏/性能速度"
+    },
+    {
         "name": "WClient v31.0",
         "desc": "17 MB v1.26.30",
         "href": "https://github.com/RetrivedMods/WClient/releases/download/WClientv31.0/WClientv31.0.apk",
