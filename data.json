@@ -1,5 +1,11 @@
 [
     {
+        "name": "MCPE Apollon Client v5.8",
+        "desc": "415 MB v1.26.32 64-bit",
+        "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc/MCPE_Apollon_Client_1.26.32_v5.8_64Bit.apk",
+        "info": "md#The Apollon Client | 我的世界模组菜单客户端 v5.8 (.apk/64 位/1.26.32) 更新：\n\n新内容：\n\n- 更改了ESP渲染以进行优化。\n- 在MobAura列表中添加了硫磺立方体。"
+    },
+    {
         "name": "LuminaClient – RC 4.1.11.3 (Hotterfix)",
         "desc": "19.1 MB v1.26.31.1",
         "href": "https://github.com/TheProjectLumina/LuminaClient/releases/download/RC-4.1.11.3/app-release.apk",
