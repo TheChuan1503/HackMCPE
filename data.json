@@ -1,5 +1,11 @@
 [
     {
+        "name": "MCPE Apollon Client v6.0",
+        "desc": "415.42 MB v1.26.32 64-bit",
+        "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc/MCPE_Apollon_Client_1.26.32_v6.0_64Bit.apk",
+        "info": "md#The Apollon Client | 我的世界模组菜单客户端 v6.0 (.apk/64 位/1.26.32) 更新：\n\n新内容：\n\n- 在 ESP 中增加了创造模式/旁观者模式下玩家的可见性。  \n(如果服务器允许)\n- KillAura/MobAura 现在拥有 Silent 转向。  \n(正确设置后，可以在没有目标锁定的情况下奔跑)\n- 修复了 32 位客户端中的功能。"
+    },
+    {
         "name": "MCPE Apollon Client v5.8",
         "desc": "415 MB v1.26.32 64-bit",
         "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc/MCPE_Apollon_Client_1.26.32_v5.8_64Bit.apk",
