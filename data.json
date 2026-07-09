@@ -1,5 +1,11 @@
 [
     {
+        "name": "WClient v32.0",
+        "desc": "17.2 MB v1.26.32",
+        "href": "https://github.com/RetrivedMods/WClient/releases/download/WClientv32.0/WClientv32.0.apk",
+        "info": "改进了连接\n增加了潜影盒预览\n增加了1.26.32支持\nUI变更\n增加了旧版运动飞行LifeBoat模式\n增加了LifeBoat移动禁用器"
+    },
+    {
         "name": "MCPE Apollon Client v6.0",
         "desc": "415.42 MB v1.26.32 64-bit",
         "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc/MCPE_Apollon_Client_1.26.32_v6.0_64Bit.apk",
