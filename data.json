@@ -1,5 +1,17 @@
 [
     {
+        "name": "MCPE Apollon Client v6.1",
+        "desc": "421 MB v1.26.33 64-bit",
+        "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc/MCPE_Apollon_Client_1.26.33_v6.1_64Bit.apk",
+        "info": "md#The Apollon Client | Minecraft 模组菜单客户端 v6.1 (.apk/64 位/1.26.33) 更新：\n\n新功能：\n\n- 现在是 Velocity 代替了 Anti Knockback。(完全自定义)\n- 修改了 Scaffold 的代码。  \n(这并不意味着它突然开始绕过所有反作弊，但这方面的工作正在进行)\n- 改变了客户端处理接收到的游戏数据的方式。"
+    },
+    {
+        "name": "WClient v33.0",
+        "desc": "15.1 MB v1.26.33",
+        "href": "https://github.com/RetrivedMods/WClient/releases/download/WClientv33.0/WClientv33.0.apk",
+        "info": "修复了配置问题\n添加了配置管理器\n添加了对 1.26.33 的支持\n修复了移动禁用器"
+    },
+    {
         "name": "WClient v32.0",
         "desc": "17.2 MB v1.26.32",
         "href": "https://github.com/RetrivedMods/WClient/releases/download/WClientv32.0/WClientv32.0.apk",
