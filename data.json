@@ -1,5 +1,16 @@
 [
     {
+        "name": "Atlas v2.0.1",
+        "desc": "12.1 MB v1.26.30-33",
+        "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc/atlas-2.0.1.apk"
+    },
+    {
+        "name": "WClient v34.0",
+        "desc": "15.6 MB v1.26.33",
+        "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc/WClientv34.0.apk",
+        "info": "新增快速丢弃功能\n新增可疑区块查找器\n提高了与 Minecraft 1.26.33 的兼容性（全面支持）\n修复了各种次要问题并提高了整体稳定性"
+    },
+    {
         "name": "MCPE Apollon Client v6.1",
         "desc": "421 MB v1.26.33 64-bit",
         "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc/MCPE_Apollon_Client_1.26.33_v6.1_64Bit.apk",
