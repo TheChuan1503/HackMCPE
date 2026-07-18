@@ -1,3 +1,14 @@
+function formatTimestamp(ts) {
+    const d = new Date(ts * 1000);
+    const year = d.getFullYear();
+    const month = String(d.getMonth() + 1).padStart(2, '0');
+    const day = String(d.getDate()).padStart(2, '0');
+    const hours = String(d.getHours()).padStart(2, '0');
+    const minutes = String(d.getMinutes()).padStart(2, '0');
+    const seconds = String(d.getSeconds()).padStart(2, '0');
+    return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
+}
+
 let totalData = [];
 let filteredData = [];
 const itemsPerPage = 9;
@@ -73,7 +84,7 @@ function renderList() {
             textDiv.style.minWidth = '0';
             textDiv.innerHTML = `
                         <span class="item-name">${item.name}</span>
-                        <span class="desc-text font" style="display: block;">${item.desc}</span>
+                        <span class="desc-text font" style="display: block;">${item.desc}${item.time ? ' ' + formatTimestamp(item.time) : ''}</span>
                     `;
 
             const actionsDiv = document.createElement('div');
@@ -143,7 +154,8 @@ function showDetails(item) {
             dialogInfoText.textContent = mdContent;
         }
     } else {
-        dialogInfoText.innerHTML = infoRaw.replace(/\n/g, '<br>');
+        const timeSuffix = (!item.info && item.time) ? ' ' + formatTimestamp(item.time) : '';
+        dialogInfoText.innerHTML = (infoRaw + timeSuffix).replace(/\n/g, '<br>');
     }
 
     dialogImg.style.display = 'none';

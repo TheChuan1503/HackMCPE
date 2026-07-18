@@ -175,10 +175,28 @@
         function statisticsCallback(data) {
             document.getElementById('statistics').textContent = `${data.todayUsers}/${data.users} | ${data.todayTotal}/${data.total} Views`
         }
+
+        function isPrivateHost(host) {
+            if (host === 'localhost' || host === '127.0.0.1' || host === '::1') return true;
+            const parts = host.split('.');
+            if (parts.length === 4) {
+                const first = parseInt(parts[0], 10);
+                const second = parseInt(parts[1], 10);
+                if (first === 10) return true;
+                if (first === 172 && second >= 16 && second <= 31) return true;
+                if (first === 192 && second === 168) return true;
+                if (first === 127) return true;
+            }
+            return false;
+        }
+
+        if (!isPrivateHost(location.hostname)) {
+            const s = document.createElement('script');
+            s.src = 'https://api1.1503dev.top/legacy_visits_statistics/?callback=statisticsCallback&tag=adec7ca51e12b0e0f17c9a30222ef9c8';
+            s.defer = true;
+            document.body.appendChild(s);
+        }
     </script>
-    <script
-        src="https://api1.1503dev.top/legacy_visits_statistics/?callback=statisticsCallback&tag=adec7ca51e12b0e0f17c9a30222ef9c8"
-        defer></script>
     <script src="./index.js"></script>
 </body>
 

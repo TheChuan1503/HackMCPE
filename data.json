@@ -1,5 +1,12 @@
 [
     {
+        "name": "MCPE Apollon Client v6.2",
+        "desc": "420.32 MB v1.26.33 64-bit",
+        "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc/MCPE_Apollon_Client_1.26.33_v6.2_64Bit.apk",
+        "info": "md#Apollon Client | Minecraft 模组菜单客户端 v6.2 (.apk/64 位/1.26.33) 更新：\n\n新内容：\n\n- 添加了热点多人生长修复。  \n在没有互联网的情况下通过局域网托管世界，就像在 2012 年一样。\n- Scaffold 退出 Beta 版本。现在它绕过了很多反作弊。\n- 更改了修改版配置保存的内部路径。\n- 添加了启用/禁用 Velocity 的勾选框。\n- 通过 switch-case-break 代替 if-else-if 优化了代码。\n- 如果玩家连接了手柄，客户端现在会隐藏屏幕按钮。",
+        "time": 1784377920
+    },
+    {
         "name": "Atlas v2.0.1",
         "desc": "12.1 MB v1.26.30-33",
         "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc/atlas-2.0.1.apk"
