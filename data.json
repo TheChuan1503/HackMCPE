@@ -1,9 +1,16 @@
 [
     {
+        "name": "MCPE Apollon Client v6.33",
+        "desc": "420 MB v1.26.33 64-bit",
+        "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc2/MCPE_Apollon_Client_1.26.33_v6.33_64Bit.apk",
+        "info": "md#Apollon Client | 我的世界 Mod 菜单客户端 v6.33 (.apk/64 位/1.26.33) 补丁：\n\n更新：\n\n- 期待已久的 32 位崩溃完全修复。  \n我不知道它是怎么运作的，但它确实有效。",
+        "time": 1785582840
+    },
+    {
         "name": "MCPE Apollon Client v6.32",
         "desc": "420 MB v1.26.33 64-bit",
         "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc2/MCPE_Apollon_Client_1.26.33_v6.32_64Bit.apk",
-        "info": "md#Apollon Client | Minecraft Mod Menu Client v6.32 (.apk/64位/1.26.33) 补丁:\n\n新功能:\n\n- 此版本使用了4.74及以下版本的旧版外挂功能。\n请检查是否会导致游戏崩溃",
+        "info": "md#Apollon Client | Minecraft Mod Menu Client v6.32 (.apk/64位/1.26.33) 补丁:\n\n新功能:\n\n- 此版本使用了4.74及以下版本的旧版外挂功能。  \n请检查是否会导致游戏崩溃",
         "time": 1785417060
     },
     {
