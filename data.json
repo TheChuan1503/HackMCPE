@@ -1,5 +1,12 @@
 [
     {
+        "name": "LuminaClient – RC 4.1.12",
+        "desc": "13.8 MB v1.26.40",
+        "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc2/LuminaClient.RC.4.1.12.apk",
+        "info": "md### 更新日志：\n- [+] 已添加对 Minecraft 1.26.40 的完整支持",
+        "time": 1785874260
+    },
+    {
         "name": "MCPE Apollon Client v6.33",
         "desc": "420 MB v1.26.33 64-bit",
         "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc2/MCPE_Apollon_Client_1.26.33_v6.33_64Bit.apk",
