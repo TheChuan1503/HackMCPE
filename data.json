@@ -1,5 +1,19 @@
 [
     {
+        "name": "MCPE Apollon Client v6.4",
+        "desc": "418 MB v1.26.40 64-bit",
+        "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc2/MCPE_Apollon_Client_1.26.40_v6.4_64Bit.apk",
+        "info": "md#Apollon Client | Minecraft 模组菜单客户端 v6.4 (.apk/64 位/1.26.40) 更新：\n\n新功能：\n\n- Show Position 现在只需在左上角显示坐标。\n- KillAura 现在在 2/3 的游戏控件上运行得更好。",
+        "time": 1786226520
+    },
+    {
+        "name": "ProtoHax v2.1.0-hotfix3",
+        "desc": "70.5 MB v1.26.40",
+        "href": "https://github.com/hax0r31337/ProtoHax/releases/download/v2.1.0/hotfix_3.apk",
+        "info": "[+] Updated client to 1.26.40\n[+] New Movement & Render Hooks\n[+] UserScript API\n[.] Fix crash on login\n[.] Fix back button callback",
+        "time": 1786169700
+    },
+    {
         "name": "LuminaClient – RC 4.1.12",
         "desc": "13.8 MB v1.26.40",
         "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc2/LuminaClient.RC.4.1.12.apk",
