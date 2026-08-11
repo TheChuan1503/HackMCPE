@@ -1,5 +1,19 @@
 [
     {
+        "name": "WClient v35.0",
+        "desc": "15.8 MB v1.26.40+",
+        "href": "https://github.com/RetrivedMods/WClient/releases/download/WClientv35.0/WClientv35.0.apk",
+        "info": "更新日志\n提升了整体稳定性\n优化了自动图腾\n修复了崩溃问题\n修复了轻微错误\n添加了箱子透视(测试版)\n添加了对1.26.40+版本的支持\n修复了区块查找器\n\n未来的更新中将考虑更多的更改和改进。",
+        "time": 1786363020
+    },
+    {
+        "name": "MCPE Apollon Client v6.41",
+        "desc": "417 MB v1.26.40 64-bit",
+        "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc2/MCPE_Apollon_Client_1.26.40_v6.41_64Bit.apk",
+        "info": "md#Apollon Client | 我的世界 模组菜单客户端 v6.41 (.apk/64 位/1.26.40) 补丁：\n\n新内容：\n\n- 增加了在克隆 Apollon 时保存配置的支持。或者是当在 ProtoHax 内部工作时。\n- Scaffold Save Y 进行了稍微的修改，以便于更方便地使用。\n- 修改了按钮的渲染，这应该能提升帧率。",
+        "time": 1786358432
+    },
+    {
         "name": "MCPE Apollon Client v6.4",
         "desc": "418 MB v1.26.40 64-bit",
         "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc2/MCPE_Apollon_Client_1.26.40_v6.4_64Bit.apk",
