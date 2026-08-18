@@ -1,5 +1,19 @@
 [
     {
+        "name": "MCPE Apollon Client v6.42",
+        "desc": "417 MB v1.26.44 64-bit",
+        "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc2/MCPE_Apollon_Client_1.26.44_v6.42_64Bit.apk",
+        "info": "md#Apollon Client | 我的世界 Mod 菜单客户端 v6.42 (.apk/64 和 32 位/1.26.44) 补丁:\n\n新增:\n\n- 添加了创造/旁观模式检查作为单独功能。  \n以前是默认生效的，现在可以关闭，这样各种恶心服务器与垃圾反作弊就不会向客户端发送无效的玩家信息。",
+        "time": 1786969600
+    },
+    {
+        "name": "ProtoHax v2.1.1",
+        "desc": "70.5 MB v1.26.40",
+        "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc2/ProtoHax_v2.1.1.apk",
+        "info": "[+] Performance/FPS optimization\n[+] New ESP options\n[+] Import Config by opening the file (Android)\n[+] Improved Configs Menu Tab",
+        "time": 1786640192
+    },
+    {
         "name": "WClient v35.0",
         "desc": "15.8 MB v1.26.40+",
         "href": "https://github.com/RetrivedMods/WClient/releases/download/WClientv35.0/WClientv35.0.apk",
@@ -145,7 +159,7 @@
         "info": "md#The Apollon Client | Minecraft 模组菜单客户端 v5.66 (.apk/64 位/1.26.23) 补丁：\n\n新内容：\n\n- 整个代码的重大优化。"
     },
     {
-        "name": "WClient v29.0-1",
+        "name": "WClient v29.0",
         "desc": "17.2 MB v1.26.0-1.26.23",
         "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc/WClientv29.0-1.apk",
         "info": "W client新版本29.0 Version 1.26.0-1.26.23\nNew:\n修复了几处崩溃报告\n为触发机器人添加了武器检查\n添加了抗水晶（实验性，计划进一步改进）\n在设置中添加了客户端ID显示\n添加了新的游戏模式切换功能\n修复了常见错误并提高了性能"
@@ -157,7 +171,7 @@
         "info": "The Apollon Client | Minecraft 模组菜单客户端 v5.65 (.apk/64 位/1.26.23) 补丁：\n\n新功能：\n\n- 代码优化。\n(界面优化、功能激活等)"
     },
     {
-        "name": "WClient v28.0-2",
+        "name": "WClient v28.0",
         "desc": "17.1 MB v1.26.21",
         "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc/WClientv28.0-2.apk",
         "info": "新版本\n\n修复了崩溃\n添加了Pop计数器"
