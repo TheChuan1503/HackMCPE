@@ -1,7 +1,20 @@
 [
     {
+        "name": "MCPE Apollon Client v6.5",
+        "desc": "473 MB v1.26.44 64-bit",
+        "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc2/MCPE_Apollon_Client_1.26.44_v6.5_64Bit.apk",
+        "info": "md#Apollon Client | 我的世界 Mod Menu 客户端 v6.5 (.apk/64与32位/1.26.44) 更新：\n\n更新日志：\n- 根据蠢货反作弊更新了 Anti Bot。\n- 修改了 Hotkeys 标签页中物理按键的绑定。\n- 添加了 Auto Tool。\n- 根据蠢货用户的需求修改了滑块类型。\n- 将 Delay 替换为最小和最大 CPS。\n- 修复了 Auto Clicker。",
+        "time": 1787579054
+    },
+    {
+        "name": "Arlen v1.1.2 Patch 6",
+        "desc": "16.4 MB v1.7-1.26.40",
+        "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc2/Arlen_v1.1.2_patch6.apk",
+        "info": "Arlen v1.1.2 patch6 FULLY FREE"
+    },
+    {
         "name": "MCPE Apollon Client v6.42",
-        "desc": "417 MB v1.26.44 64-bit",
+        "desc": "473 MB v1.26.44 64-bit",
         "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc2/MCPE_Apollon_Client_1.26.44_v6.42_64Bit.apk",
         "info": "md#Apollon Client | 我的世界 Mod 菜单客户端 v6.42 (.apk/64 和 32 位/1.26.44) 补丁:\n\n新增:\n\n- 添加了创造/旁观模式检查作为单独功能。  \n以前是默认生效的，现在可以关闭，这样各种恶心服务器与垃圾反作弊就不会向客户端发送无效的玩家信息。",
         "time": 1786969600
