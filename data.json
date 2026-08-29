@@ -1,5 +1,19 @@
 [
     {
+        "name": "MCPE Apollon Client v6.51",
+        "desc": "473 MB v1.26.44 64-bit",
+        "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc2/MCPE_Apollon_Client_1.26.44_v6.51_64Bit.apk",
+        "info": "md#Apollon Client | Minecraft 模组菜单客户端 v6.51 (.apk/64和32位/1.26.44) 补丁：\n\n更新内容：\n\n- 在 Visuals 选项卡中新增了针对 BDS/Realms 服务器的漏洞利用。\n- 在 ESP Players->Health 中新增了伤害吸收显示。\n- 新增了 ESP Players->Hunger。",
+        "time": 1787872691
+    },
+    {
+        "name": "RunawayPatcher v1.0",
+        "desc": " Netease-v3.9.5.297103",
+        "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc2/RunawayPatcher_1.0.apk",
+        "info": "跑路科技Xposed破解补丁",
+        "time": 1787824921
+    },
+    {
         "name": "MCPE Apollon Client v6.5",
         "desc": "473 MB v1.26.44 64-bit",
         "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc2/MCPE_Apollon_Client_1.26.44_v6.5_64Bit.apk",
