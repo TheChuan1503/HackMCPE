@@ -1,5 +1,19 @@
 [
     {
+        "name": "WClient v36.0",
+        "desc": "15.8 MB v1.26.45",
+        "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc2/WClientv36.0.apk",
+        "info": "改进了服务器管理器\n添加了 TPMine\n修复了若干崩溃问题\n改进了 ESP\n添加了 BlockESP（可能无法在所有服务器上生效）\n添加了对 1.26.45 的支持\n添加了 Stash Finder",
+        "time": 1788348120
+    },
+    {
+        "name": "LuminaClient – RC 4.1.14",
+        "desc": "17.5 MB v1.26.45",
+        "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc2/LuminaClient.RC.4.1.14.apk",
+        "info": "md### 更新日志：\n- [+] 已添加对 Minecraft 1.26.45 的完整支持",
+        "time": 1788178560
+    },
+    {
         "name": "MCPE Apollon Client v6.51",
         "desc": "473 MB v1.26.44 64-bit",
         "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc2/MCPE_Apollon_Client_1.26.44_v6.51_64Bit.apk",
