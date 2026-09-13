@@ -1,5 +1,12 @@
 [
     {
+        "name": "MCPE Apollon Client v6.53",
+        "desc": "473 MB v1.26.45 64-bit",
+        "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc2/MCPE_Apollon_Client_1.26.45_v6.53_64Bit.apk",
+        "info": "md#Apollon Client | 我的世界 模组菜单客户端 v6.53 (apk/64 和 32 位/1.26.45) 补丁:\n\n更新内容:\n\n- 技术更新。\n尝试修复部分安卓设备上的点击缺陷。\n\n遇到点击缺陷的用户请帮忙测试。",
+        "time": 1789246583
+    },
+    {
         "name": "WClient v36.0",
         "desc": "15.8 MB v1.26.45",
         "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc2/WClientv36.0.apk",
