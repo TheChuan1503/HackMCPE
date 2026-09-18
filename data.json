@@ -1,5 +1,26 @@
 [
     {
+        "name": "LuminaClient – RC 4.1.16",
+        "desc": "17.53 MB v1.26.51",
+        "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc2/LuminaClient.RC.4.1.16.apk",
+        "info": "md### 更新日志：\n- [+] 已添加对 Minecraft 1.26.51 的完整支持",
+        "time": 1789621860
+    },
+    {
+        "name": "LuminaClient – RC 4.1.15",
+        "desc": "17.53 MB v1.26.50",
+        "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc2/LuminaClient.RC.4.1.15.apk",
+        "info": "md### 更新日志：\n- [+] 已添加对 Minecraft 1.26.50 的完整支持",
+        "time": 1789488420
+    },
+    {
+        "name": "MCPE Apollon Client v6.54",
+        "desc": "473.49 MB v1.26.45 64-bit",
+        "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc2/MCPE_Apollon_Client_1.26.45_v6.54_64Bit.apk",
+        "info": "md#Apollon Client | Minecraft Mod Menu Client v6.54 (.apk/64与32位/1.26.45) 补丁:\n\n新内容:\n\n- 技术更新。\n尝试修复某些Android设备上的按键bug #2。\n\n按键有bug的用户请帮忙测试。",
+        "time": 1789338500
+    },
+    {
         "name": "MCPE Apollon Client v6.53",
         "desc": "473 MB v1.26.45 64-bit",
         "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc2/MCPE_Apollon_Client_1.26.45_v6.53_64Bit.apk",
