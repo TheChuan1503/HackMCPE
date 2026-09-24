@@ -1,5 +1,19 @@
 [
     {
+        "name": "WClient v37.0",
+        "desc": "15.8 MB v1.26.51",
+        "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc2/WClientv37.0.apk",
+        "info": "添加了对 1.26.51 的支持",
+        "time": 1790098800
+    },
+    {
+        "name": "MCPE Apollon Client v6.62",
+        "desc": "442.39 MB v1.26.51 64-bit",
+        "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc2/MCPE_Apollon_Client_1.26.51_v6.62_64Bit.apk",
+        "info": "md#Apollon Client | Minecraft Mod Menu Client v6.62 (.apk/64与32位/1.26.51) 补丁：\n\n新特性：\n- 修复了可能导致卡顿的快捷键和物理按键功能。",
+        "time": 1789989657
+    },
+    {
         "name": "LuminaClient – RC 4.1.16",
         "desc": "17.53 MB v1.26.51",
         "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc2/LuminaClient.RC.4.1.16.apk",
