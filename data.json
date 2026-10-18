@@ -1,5 +1,12 @@
 [
     {
+        "name": "MCPE Apollon Client v6.7",
+        "desc": "724 MB v1.26.52 64-bit",
+        "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc2/MCPE_Apollon_Client_1.26.52_v6.7_64Bit.apk",
+        "info": "md#Apollon Client | Minecraft 模组菜单客户端 v6.7 (.apk/64与32位/1.26.52) 更新：\n\n新功能：\n- 添加了 Instant Respawn（瞬间重生）。\n- 添加了 Stay Online In Background（后台保持在线）。  \n即使切出游戏也能保持在服务器中。\n- 添加了 Blink（瞬移/闪烁）。\n- 添加了 Server Blink（服务器闪烁）。  \n适用于 BDS 服务器的卡顿器。\n- Scaffold（自动搭建）现在能正确识别实体方块。\n\n- Block Fly（方块飞行）现在下降得更快。\n- 所有启用 Prediction 的服务器均可正常配合 Free Camera 和 KillAura/Rotations 使用。\n- 修改了获取玩家的代码。\n- 优化了代码中的数据复用。\n- 删除了 Step（自动登高）。",
+        "time": 1792061721
+    },
+    {
         "name": "WClient v37.0",
         "desc": "15.8 MB v1.26.51",
         "href": "https://github.com/TheChuan1503/HackMCPE/releases/download/misc2/WClientv37.0.apk",
